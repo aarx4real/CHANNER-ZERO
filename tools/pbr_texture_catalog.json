@@ -1,0 +1,341 @@
+{
+  "sets": [
+    {
+      "name": "aerial_beach_02",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/aerial_beach_02_4k.blend/textures/aerial_beach_02_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/aerial_beach_02_4k.blend/textures/aerial_beach_02_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/aerial_beach_02_4k.blend/textures/aerial_beach_02_rough_4k.jpg"
+      },
+      "all_files": [
+        "aerial_beach_02_diff_4k.jpg",
+        "aerial_beach_02_disp_4k.png",
+        "aerial_beach_02_nor_gl_4k.exr",
+        "aerial_beach_02_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "asphalt_02",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/asphalt_02_4k.blend/textures/asphalt_02_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/asphalt_02_4k.blend/textures/asphalt_02_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/asphalt_02_4k.blend/textures/asphalt_02_rough_4k.jpg"
+      },
+      "all_files": [
+        "asphalt_02_diff_4k.jpg",
+        "asphalt_02_disp_4k.png",
+        "asphalt_02_nor_gl_4k.exr",
+        "asphalt_02_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "brown_mud_03",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/brown_mud_03_4k.blend/textures/brown_mud_03_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/brown_mud_03_4k.blend/textures/brown_mud_03_nor_gl_4k.exr"
+      },
+      "all_files": [
+        "brown_mud_03_diff_4k.jpg",
+        "brown_mud_03_disp_4k.png",
+        "brown_mud_03_nor_gl_4k.exr",
+        "brown_mud_03_spec_4k.png"
+      ]
+    },
+    {
+      "name": "concrete_floor_damaged_01",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/concrete_floor_damaged_01_4k.blend/textures/concrete_floor_damaged_01_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/concrete_floor_damaged_01_4k.blend/textures/concrete_floor_damaged_01_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/concrete_floor_damaged_01_4k.blend/textures/concrete_floor_damaged_01_rough_4k.exr"
+      },
+      "all_files": [
+        "concrete_floor_damaged_01_diff_4k.jpg",
+        "concrete_floor_damaged_01_disp_4k.png",
+        "concrete_floor_damaged_01_nor_gl_4k.exr",
+        "concrete_floor_damaged_01_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "cracked_concrete",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/cracked_concrete_4k.blend/textures/cracked_concrete_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/cracked_concrete_4k.blend/textures/cracked_concrete_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/cracked_concrete_4k.blend/textures/cracked_concrete_rough_4k.exr"
+      },
+      "all_files": [
+        "cracked_concrete_diff_4k.jpg",
+        "cracked_concrete_disp_4k.png",
+        "cracked_concrete_nor_gl_4k.exr",
+        "cracked_concrete_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "damaged_plaster",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/damaged_plaster_4k.blend/textures/damaged_plaster_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/damaged_plaster_4k.blend/textures/damaged_plaster_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/damaged_plaster_4k.blend/textures/damaged_plaster_rough_4k.exr"
+      },
+      "all_files": [
+        "damaged_plaster_diff_4k.jpg",
+        "damaged_plaster_disp_4k.png",
+        "damaged_plaster_nor_gl_4k.exr",
+        "damaged_plaster_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "decrepit_wallpaper",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/decrepit_wallpaper_4k.blend/textures/decrepit_wallpaper_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/decrepit_wallpaper_4k.blend/textures/decrepit_wallpaper_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/decrepit_wallpaper_4k.blend/textures/decrepit_wallpaper_rough_4k.exr"
+      },
+      "all_files": [
+        "decrepit_wallpaper_diff_4k.jpg",
+        "decrepit_wallpaper_disp_4k.png",
+        "decrepit_wallpaper_nor_gl_4k.exr",
+        "decrepit_wallpaper_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "dirt",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/dirt_4k.blend/textures/dirt_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/dirt_4k.blend/textures/dirt_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/dirt_4k.blend/textures/dirt_rough_4k.exr"
+      },
+      "all_files": [
+        "dirt_diff_4k.jpg",
+        "dirt_disp_4k.png",
+        "dirt_nor_gl_4k.exr",
+        "dirt_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "dirty_concrete",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/dirty_concrete_4k.blend/textures/dirty_concrete_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/dirty_concrete_4k.blend/textures/dirty_concrete_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/dirty_concrete_4k.blend/textures/dirty_concrete_rough_4k.jpg"
+      },
+      "all_files": [
+        "dirty_concrete_diff_4k.jpg",
+        "dirty_concrete_disp_4k.png",
+        "dirty_concrete_nor_gl_4k.exr",
+        "dirty_concrete_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "dirty_tiles",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/dirty_tiles_4k.blend/textures/dirty_tiles_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/dirty_tiles_4k.blend/textures/dirty_tiles_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/dirty_tiles_4k.blend/textures/dirty_tiles_rough_4k.exr",
+        "ao": "res://assets/textures/downloaded_pbr/dirty_tiles_4k.blend/textures/dirty_tiles_ao_4k.jpg"
+      },
+      "all_files": [
+        "dirty_tiles_ao_4k.jpg",
+        "dirty_tiles_diff_4k.jpg",
+        "dirty_tiles_disp_4k.png",
+        "dirty_tiles_nor_gl_4k.exr",
+        "dirty_tiles_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "forest_leaves_02",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/forest_leaves_02_4k.blend/textures/forest_leaves_02_diffuse_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/forest_leaves_02_4k.blend/textures/forest_leaves_02_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/forest_leaves_02_4k.blend/textures/forest_leaves_02_rough_4k.jpg"
+      },
+      "all_files": [
+        "forest_leaves_02_diffuse_4k.jpg",
+        "forest_leaves_02_disp_4k.png",
+        "forest_leaves_02_nor_gl_4k.exr",
+        "forest_leaves_02_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "forrest_ground_01",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/forrest_ground_01_4k.blend/textures/forrest_ground_01_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/forrest_ground_01_4k.blend/textures/forrest_ground_01_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/forrest_ground_01_4k.blend/textures/forrest_ground_01_rough_4k.jpg"
+      },
+      "all_files": [
+        "forrest_ground_01_diff_4k.jpg",
+        "forrest_ground_01_disp_4k.png",
+        "forrest_ground_01_nor_gl_4k.exr",
+        "forrest_ground_01_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "hessian_380",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/hessian_380_4k.blend/textures/hessian_380_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/hessian_380_4k.blend/textures/hessian_380_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/hessian_380_4k.blend/textures/hessian_380_rough_4k.exr",
+        "metallic": "res://assets/textures/downloaded_pbr/hessian_380_4k.blend/textures/hessian_380_metal_4k.exr"
+      },
+      "all_files": [
+        "hessian_380_anisotropy_rotation_4k.png",
+        "hessian_380_anisotropy_strength_4k.png",
+        "hessian_380_diff_4k.jpg",
+        "hessian_380_disp_4k.png",
+        "hessian_380_mask_4k.png",
+        "hessian_380_metal_4k.exr",
+        "hessian_380_nor_gl_4k.exr",
+        "hessian_380_rough_4k.exr",
+        "hessian_380_spec_ior_4k.png"
+      ]
+    },
+    {
+      "name": "leather_red_02",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/leather_red_02_4k.blend/textures/leather_red_02_coll1_4k.png",
+        "normal": "res://assets/textures/downloaded_pbr/leather_red_02_4k.blend/textures/leather_red_02_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/leather_red_02_4k.blend/textures/leather_red_02_rough_4k.exr"
+      },
+      "all_files": [
+        "leather_red_02_coll1_4k.png",
+        "leather_red_02_nor_gl_4k.exr",
+        "leather_red_02_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "old_wood_floor",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/old_wood_floor_4k.blend/textures/old_wood_floor_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/old_wood_floor_4k.blend/textures/old_wood_floor_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/old_wood_floor_4k.blend/textures/old_wood_floor_rough_4k.exr"
+      },
+      "all_files": [
+        "old_wood_floor_diff_4k.jpg",
+        "old_wood_floor_disp_4k.png",
+        "old_wood_floor_nor_gl_4k.exr",
+        "old_wood_floor_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "rocks_ground_03",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/rocks_ground_03_4k.blend/textures/rocks_ground_03_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/rocks_ground_03_4k.blend/textures/rocks_ground_03_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/rocks_ground_03_4k.blend/textures/rocks_ground_03_rough_4k.jpg"
+      },
+      "all_files": [
+        "rocks_ground_03_diff_4k.jpg",
+        "rocks_ground_03_disp_4k.png",
+        "rocks_ground_03_nor_gl_4k.exr",
+        "rocks_ground_03_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "roof_07",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/roof_07_4k.blend/textures/roof_07_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/roof_07_4k.blend/textures/roof_07_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/roof_07_4k.blend/textures/roof_07_rough_4k.jpg"
+      },
+      "all_files": [
+        "roof_07_diff_4k.jpg",
+        "roof_07_disp_4k.png",
+        "roof_07_nor_gl_4k.exr",
+        "roof_07_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "rough_wood",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/rough_wood_4k.blend/textures/rough_wood_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/rough_wood_4k.blend/textures/rough_wood_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/rough_wood_4k.blend/textures/rough_wood_rough_4k.jpg"
+      },
+      "all_files": [
+        "rough_wood_diff_4k.jpg",
+        "rough_wood_disp_4k.png",
+        "rough_wood_nor_gl_4k.exr",
+        "rough_wood_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "rusty_metal_02",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/rusty_metal_02_4k.blend/textures/rusty_metal_02_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/rusty_metal_02_4k.blend/textures/rusty_metal_02_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/rusty_metal_02_4k.blend/textures/rusty_metal_02_rough_4k.jpg"
+      },
+      "all_files": [
+        "rusty_metal_02_diff_4k.jpg",
+        "rusty_metal_02_disp_4k.png",
+        "rusty_metal_02_nor_gl_4k.exr",
+        "rusty_metal_02_rough_4k.jpg"
+      ]
+    },
+    {
+      "name": "rusty_metal_04",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/rusty_metal_04_4k.blend/textures/rusty_metal_04_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/rusty_metal_04_4k.blend/textures/rusty_metal_04_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/rusty_metal_04_4k.blend/textures/rusty_metal_04_rough_4k.exr",
+        "metallic": "res://assets/textures/downloaded_pbr/rusty_metal_04_4k.blend/textures/rusty_metal_04_metal_4k.exr"
+      },
+      "all_files": [
+        "rusty_metal_04_diff_4k.jpg",
+        "rusty_metal_04_disp_4k.png",
+        "rusty_metal_04_metal_4k.exr",
+        "rusty_metal_04_nor_gl_4k.exr",
+        "rusty_metal_04_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "velour_velvet",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/velour_velvet_4k.blend/textures/velour_velvet_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/velour_velvet_4k.blend/textures/velour_velvet_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/velour_velvet_4k.blend/textures/velour_velvet_rough_4k.exr",
+        "metallic": "res://assets/textures/downloaded_pbr/velour_velvet_4k.blend/textures/velour_velvet_metal_4k.exr"
+      },
+      "all_files": [
+        "velour_velvet_anisotropy_rotation_4k.png",
+        "velour_velvet_anisotropy_strength_4k.png",
+        "velour_velvet_diff_4k.jpg",
+        "velour_velvet_disp_4k.png",
+        "velour_velvet_metal_4k.exr",
+        "velour_velvet_nor_gl_4k.exr",
+        "velour_velvet_rough_4k.exr",
+        "velour_velvet_spec_ior_4k.png"
+      ]
+    },
+    {
+      "name": "weathered_planks",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/weathered_planks_4k.blend/textures/weathered_planks_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/weathered_planks_4k.blend/textures/weathered_planks_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/weathered_planks_4k.blend/textures/weathered_planks_rough_4k.exr"
+      },
+      "all_files": [
+        "weathered_planks_diff_4k.jpg",
+        "weathered_planks_disp_4k.png",
+        "weathered_planks_nor_gl_4k.exr",
+        "weathered_planks_rough_4k.exr"
+      ]
+    },
+    {
+      "name": "worn_corrugated_iron",
+      "maps": {
+        "albedo": "res://assets/textures/downloaded_pbr/worn_corrugated_iron_4k.blend/textures/worn_corrugated_iron_diff_4k.jpg",
+        "normal": "res://assets/textures/downloaded_pbr/worn_corrugated_iron_4k.blend/textures/worn_corrugated_iron_nor_gl_4k.exr",
+        "roughness": "res://assets/textures/downloaded_pbr/worn_corrugated_iron_4k.blend/textures/worn_corrugated_iron_rough_4k.exr"
+      },
+      "all_files": [
+        "worn_corrugated_iron_diff_4k.jpg",
+        "worn_corrugated_iron_disp_4k.png",
+        "worn_corrugated_iron_nor_gl_4k.exr",
+        "worn_corrugated_iron_rough_4k.exr"
+      ]
+    }
+  ],
+  "albedo_limit": 2048,
+  "data_limit": 1024
+}

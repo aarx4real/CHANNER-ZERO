@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Material" path="res://materials/red.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/pbr/painted_wood_red.tres" id="PBR_painted_wood_red"]
+
+[ext_resource type="Material" path="res://materials/pbr/weathered_planks.tres" id="PBR_weathered_planks"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="PBR_hessian_380"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(5.60000, 1.10000, 0.70000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(5.60000, 1.10000, 0.70000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(5.60000, 2.90000, 0.16000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(5.60000, 2.90000, 0.16000)
+
+[sub_resource type="CylinderMesh" id="R5"]
+top_radius = 0.08
+bottom_radius = 0.08
+height = 3.2
+radial_segments = 12
+material = ExtResource("2")
+
+[sub_resource type="PrismMesh" id="R6"]
+size = Vector3(6.2, 1.1, 3.6)
+material = ExtResource("3")
+
+[node name="OpenStallBlockout" type="Node3D"]
+
+[node name="Counter" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.55000, 0.40000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Counter"]
+material_override = ExtResource("PBR_painted_wood_red")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Counter"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Back" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 1.45000, -1.40000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Back"]
+material_override = ExtResource("PBR_weathered_planks")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Back"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Post-2.7" type="MeshInstance3D" parent="."]
+position = Vector3(-2.70000, 1.60000, 0.80000)
+mesh = SubResource("R5")
+
+[node name="Post2.7" type="MeshInstance3D" parent="."]
+position = Vector3(2.70000, 1.60000, 0.80000)
+mesh = SubResource("R5")
+
+[node name="CanvasCanopy" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(0.00000, 3.45000, -0.10000)
+mesh = SubResource("R6")
+
+[node name="Sign" type="Label3D" parent="."]
+position = Vector3(0.00000, 2.50000, 0.85000)
+text = "MIDNIGHT PRIZES"
+font_size = 24
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false

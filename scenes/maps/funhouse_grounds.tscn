@@ -1,0 +1,190 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Material" path="res://materials/ochre.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/mirror.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/red.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="4"]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_02.tres" id="5"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(0.22000, 3.80000, 3.80000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(0.22000, 3.80000, 3.80000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(0.03000, 3.30000, 3.30000)
+material = ExtResource("2")
+
+[sub_resource type="CylinderMesh" id="R4"]
+top_radius = 0.13
+bottom_radius = 0.13
+height = 4.6
+radial_segments = 12
+material = ExtResource("3")
+
+[sub_resource type="CylinderMesh" id="R5"]
+top_radius = 0.05
+bottom_radius = 1.2
+height = 2
+radial_segments = 12
+material = ExtResource("4")
+
+[sub_resource type="BoxMesh" id="R6"]
+size = Vector3(0.65000, 0.90000, 0.55000)
+material = ExtResource("5")
+
+[sub_resource type="BoxShape3D" id="R7"]
+size = Vector3(0.65000, 0.90000, 0.55000)
+
+[sub_resource type="CylinderMesh" id="R8"]
+top_radius = 0.055
+bottom_radius = 0.055
+height = 0.22
+radial_segments = 12
+material = ExtResource("1")
+
+[node name="FunhouseGrounds" type="Node3D"]
+
+[node name="MirrorFrame0" type="StaticBody3D" parent="."]
+position = Vector3(-7.00000, 1.90000, 4.00000)
+
+rotation = Vector3(0.00000, -0.30000, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="MirrorFrame0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="MirrorFrame0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="MirrorSurface0" type="MeshInstance3D" parent="."]
+position = Vector3(-6.86000, 1.90000, 4.00000)
+mesh = SubResource("R3")
+rotation = Vector3(0.00000, -0.30000, 0.00000)
+
+[node name="MirrorFrame1" type="StaticBody3D" parent="."]
+position = Vector3(5.00000, 1.90000, 1.00000)
+
+rotation = Vector3(0.00000, 0.50000, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="MirrorFrame1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="MirrorFrame1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="MirrorSurface1" type="MeshInstance3D" parent="."]
+position = Vector3(4.86000, 1.90000, 1.00000)
+mesh = SubResource("R3")
+rotation = Vector3(0.00000, 0.50000, 0.00000)
+
+[node name="MirrorFrame2" type="StaticBody3D" parent="."]
+position = Vector3(-6.00000, 1.90000, -3.00000)
+
+rotation = Vector3(0.00000, 0.25000, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="MirrorFrame2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="MirrorFrame2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="MirrorSurface2" type="MeshInstance3D" parent="."]
+position = Vector3(-5.86000, 1.90000, -3.00000)
+mesh = SubResource("R3")
+rotation = Vector3(0.00000, 0.25000, 0.00000)
+
+[node name="MirrorFrame3" type="StaticBody3D" parent="."]
+position = Vector3(6.00000, 1.90000, -7.00000)
+
+rotation = Vector3(0.00000, -0.35000, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="MirrorFrame3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="MirrorFrame3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="MirrorSurface3" type="MeshInstance3D" parent="."]
+position = Vector3(5.86000, 1.90000, -7.00000)
+mesh = SubResource("R3")
+rotation = Vector3(0.00000, -0.35000, 0.00000)
+
+[node name="Gatepost-9" type="MeshInstance3D" parent="."]
+position = Vector3(-9.00000, 2.30000, 8.00000)
+mesh = SubResource("R4")
+
+[node name="CanvasSpire-9" type="MeshInstance3D" parent="."]
+position = Vector3(-9.00000, 5.00000, 8.00000)
+mesh = SubResource("R5")
+
+[node name="Gatepost9" type="MeshInstance3D" parent="."]
+position = Vector3(9.00000, 2.30000, 8.00000)
+mesh = SubResource("R4")
+
+[node name="CanvasSpire9" type="MeshInstance3D" parent="."]
+position = Vector3(9.00000, 5.00000, 8.00000)
+mesh = SubResource("R5")
+
+[node name="Sign" type="Label3D" parent="."]
+position = Vector3(0.00000, 4.00000, 8.00000)
+text = "MIRROR GROUNDS"
+font_size = 44
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="FusePedestal1" type="StaticBody3D" parent="."]
+position = Vector3(-4.00000, 0.45000, -2.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="FusePedestal1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R6")
+
+[node name="Collision" type="CollisionShape3D" parent="FusePedestal1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R7")
+
+[node name="FusePlaceholder1" type="MeshInstance3D" parent="."]
+position = Vector3(-4.00000, 1.05000, -2.00000)
+mesh = SubResource("R8")
+rotation = Vector3(1.57080, 0.00000, 0.00000)
+
+[node name="Fuse1PickupMarker" type="Marker3D" parent="."]
+position = Vector3(-4.00000, 1.05000, -2.00000)
+
+
+[node name="FuseSign1" type="Label3D" parent="."]
+position = Vector3(-4.00000, 1.35000, -1.68000)
+text = "FUSE 1 / POSITION"
+font_size = 15
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="MirrorApparitionStoryMarker" type="Marker3D" parent="."]
+position = Vector3(-5.00000, 1.70000, -3.00000)
+
+
+[node name="ColdPool" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 3.00000, 0.00000)
+light_color = Color(0.35, 0.48, 0.7, 1)
+light_energy = 1.7
+omni_range = 18
+shadow_enabled = false

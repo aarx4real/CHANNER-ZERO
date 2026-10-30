@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/mirror_alley.tscn" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/prize_stall_route.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/main_carnival_stage.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/television_control_room.tscn" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/backstage_corridor.tscn" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/owners_office.tscn" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/office_theatre_connector.tscn" id="7"]
+
+[node name="ChannelZeroFoundation" type="Node3D"]
+
+[node name="MirrorAlley" parent="." instance=ExtResource("1")]
+position = Vector3(-19.00000, 0.00000, -5.00000)
+
+[node name="PrizeRoute" parent="." instance=ExtResource("2")]
+position = Vector3(17.00000, 0.00000, -8.00000)
+
+[node name="MainStage" parent="." instance=ExtResource("3")]
+position = Vector3(-9.00000, 0.00000, -31.00000)
+
+[node name="TVControlRoom" parent="." instance=ExtResource("4")]
+position = Vector3(-19.00000, 0.00000, -39.00000)
+
+[node name="Backstage" parent="." instance=ExtResource("5")]
+position = Vector3(-19.00000, 0.00000, -47.00000)
+
+[node name="OwnersOffice" parent="." instance=ExtResource("6")]
+position = Vector3(-19.00000, 0.00000, -54.00000)
+
+[node name="TheatreConnector" parent="." instance=ExtResource("7")]
+position = Vector3(-14.50000, 0.00000, -55.50000)
+
+[node name="StageDirection" type="Label3D" parent="."]
+position = Vector3(0.00000, 2.30000, -29.00000)
+text = "MAIN STAGE  <"
+font_size = 25
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="MirrorDirection" type="Label3D" parent="."]
+position = Vector3(-5.00000, 2.10000, -9.80000)
+text = "MIRROR ALLEY  <"
+font_size = 21
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="PrizeDirection" type="Label3D" parent="."]
+position = Vector3(5.00000, 2.10000, -2.00000)
+text = "PRIZE GALLERY  >"
+font_size = 21
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="ControlDirection" type="Label3D" parent="."]
+position = Vector3(-9.00000, 2.50000, -36.40000)
+text = "TV CONTROL  /  OWNER  <"
+font_size = 21
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="MaintenanceBypassDoorMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, -37.00000)
+
+
+[node name="MidwayStoryEventMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, -16.00000)
+

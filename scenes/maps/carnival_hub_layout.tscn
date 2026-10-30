@@ -1,0 +1,1241 @@
+[gd_scene load_steps=83 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/hub_ground.tscn" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/carnival_entrance.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/ticket_booth.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/funhouse_grounds.tscn" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/prize_courtyard.tscn" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/power_shed.tscn" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/main_carnival_stage.tscn" id="7"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="8"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/carnival_story_quarter.tscn" id="9"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/hub_distant_scenery.tscn" id="10"]
+
+[ext_resource type="Material" path="res://materials/pbr/dirt.tres" id="11"]
+
+[ext_resource type="Material" path="res://materials/pbr/asphalt_02.tres" id="12"]
+
+[ext_resource type="Material" path="res://materials/pbr/forrest_ground_01.tres" id="13"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/open_stall_blockout.tscn" id="14"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/lamp.tscn" id="15"]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="16"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="17"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="PBR_hessian_380"]
+
+[ext_resource type="Material" path="res://materials/pbr/dirty_concrete.tres" id="PBR_dirty_concrete"]
+
+[ext_resource type="Material" path="res://materials/pbr/concrete_floor_damaged_01.tres" id="PBR_concrete_floor_damaged_01"]
+
+[ext_resource type="Material" path="res://materials/pbr/dirt.tres" id="PBR_dirt"]
+
+[ext_resource type="Material" path="res://materials/pbr/rocks_ground_03.tres" id="PBR_rocks_ground_03"]
+
+[ext_resource type="Material" path="res://materials/pbr/forrest_ground_01.tres" id="PBR_forrest_ground_01"]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_04.tres" id="PBR_rusty_metal_04"]
+
+[sub_resource type="CylinderMesh" id="R1"]
+top_radius = 0.2
+bottom_radius = 9
+height = 2.4
+radial_segments = 12
+material = ExtResource("8")
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(24.00000, 0.80000, 22.00000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(24.00000, 0.80000, 22.00000)
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(7.00000, 0.16000, 10.03195)
+material = ExtResource("12")
+
+[sub_resource type="BoxShape3D" id="R5"]
+size = Vector3(7.00000, 0.16000, 10.03195)
+
+[sub_resource type="CylinderMesh" id="R6"]
+top_radius = 1.2
+bottom_radius = 4
+height = 1.4
+radial_segments = 12
+material = ExtResource("13")
+
+[sub_resource type="CylinderMesh" id="R7"]
+top_radius = 4
+bottom_radius = 4
+height = 0.024
+radial_segments = 12
+material = ExtResource("11")
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(41.01219, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R9"]
+size = Vector3(41.01219, 2.80000, 0.15000)
+
+[sub_resource type="CylinderMesh" id="R10"]
+top_radius = 2
+bottom_radius = 6
+height = 3.2
+radial_segments = 12
+material = ExtResource("13")
+
+[sub_resource type="CylinderMesh" id="R11"]
+top_radius = 0.18
+bottom_radius = 0.18
+height = 8.022468448052631
+radial_segments = 12
+material = ExtResource("17")
+
+[sub_resource type="CylinderMesh" id="R12"]
+top_radius = 0.07
+bottom_radius = 0.07
+height = 3.3541019662496847
+radial_segments = 12
+material = ExtResource("17")
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(16.55295, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R14"]
+size = Vector3(16.55295, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(17.72005, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(17.72005, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(25.63201, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R18"]
+size = Vector3(25.63201, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R19"]
+size = Vector3(22.47221, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R20"]
+size = Vector3(22.47221, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R21"]
+size = Vector3(20.88061, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R22"]
+size = Vector3(20.88061, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R23"]
+size = Vector3(15.81139, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R24"]
+size = Vector3(15.81139, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R25"]
+size = Vector3(31.06445, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R26"]
+size = Vector3(31.06445, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R27"]
+size = Vector3(16.27882, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R28"]
+size = Vector3(16.27882, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R29"]
+size = Vector3(18.43909, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R30"]
+size = Vector3(18.43909, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R31"]
+size = Vector3(19.72308, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R32"]
+size = Vector3(19.72308, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R33"]
+size = Vector3(18.60108, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R34"]
+size = Vector3(18.60108, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R35"]
+size = Vector3(17.49286, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R36"]
+size = Vector3(17.49286, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R37"]
+size = Vector3(23.34524, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R38"]
+size = Vector3(23.34524, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R39"]
+size = Vector3(22.36068, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R40"]
+size = Vector3(22.36068, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R41"]
+size = Vector3(28.63564, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R42"]
+size = Vector3(28.63564, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R43"]
+size = Vector3(24.18677, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R44"]
+size = Vector3(24.18677, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R45"]
+size = Vector3(27.45906, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R46"]
+size = Vector3(27.45906, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R47"]
+size = Vector3(17.88854, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R48"]
+size = Vector3(17.88854, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R49"]
+size = Vector3(18.02776, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R50"]
+size = Vector3(18.02776, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R51"]
+size = Vector3(23.53720, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R52"]
+size = Vector3(23.53720, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R53"]
+size = Vector3(22.80351, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R54"]
+size = Vector3(22.80351, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R55"]
+size = Vector3(19.41649, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R56"]
+size = Vector3(19.41649, 2.80000, 0.15000)
+
+[sub_resource type="BoxMesh" id="R57"]
+size = Vector3(15.00000, 2.80000, 0.15000)
+material = ExtResource("16")
+
+[sub_resource type="BoxShape3D" id="R58"]
+size = Vector3(15.00000, 2.80000, 0.15000)
+
+[node name="CarnivalHubLayout" type="Node3D"]
+
+[node name="Terrain" parent="." instance=ExtResource("1")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Entrance" parent="." instance=ExtResource("2")]
+position = Vector3(8.00000, 0.00000, 32.00000)
+rotation = Vector3(0.00000, 0.22000, 0.00000)
+
+[node name="TicketBooth" parent="." instance=ExtResource("3")]
+position = Vector3(-11.00000, 0.00000, 23.00000)
+rotation = Vector3(0.00000, 0.18000, 0.00000)
+
+[node name="MirrorRoute" parent="." instance=ExtResource("4")]
+position = Vector3(-43.00000, 0.00000, -24.00000)
+
+[node name="PrizeRoute" parent="." instance=ExtResource("5")]
+position = Vector3(44.00000, 0.00000, -12.00000)
+
+[node name="PowerShed" parent="." instance=ExtResource("6")]
+position = Vector3(30.00000, 0.80000, -65.00000)
+rotation = Vector3(0.00000, -0.18000, 0.00000)
+
+[node name="MainStage" parent="." instance=ExtResource("7")]
+position = Vector3(-16.00000, 0.00000, -42.00000)
+rotation = Vector3(0.00000, -0.25000, 0.00000)
+
+[node name="StageTentCanopy" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(-16.00000, 6.80000, -44.00000)
+mesh = SubResource("R1")
+
+[node name="StoryQuarter" parent="." instance=ExtResource("9")]
+position = Vector3(-40.00000, 0.00000, -51.00000)
+rotation = Vector3(0.00000, 0.20000, 0.00000)
+
+[node name="Background" parent="." instance=ExtResource("10")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="ServiceYard" type="StaticBody3D" parent="."]
+position = Vector3(29.00000, 0.40000, -66.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="ServiceYard"]
+material_override = ExtResource("PBR_dirty_concrete")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R2")
+
+[node name="Collision" type="CollisionShape3D" parent="ServiceYard"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R3")
+
+[node name="ServiceSouthRamp" type="StaticBody3D" parent="."]
+position = Vector3(23.00000, 0.32025, -50.00638)
+
+rotation = Vector3(0.07983, 0.00000, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="ServiceSouthRamp"]
+material_override = ExtResource("PBR_concrete_floor_damaged_01")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R4")
+
+[node name="Collision" type="CollisionShape3D" parent="ServiceSouthRamp"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R5")
+
+[node name="ServiceWestRamp" type="StaticBody3D" parent="."]
+position = Vector3(12.00638, 0.32025, -68.00000)
+
+rotation = Vector3(-0.07983, 1.57080, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="ServiceWestRamp"]
+material_override = ExtResource("PBR_concrete_floor_damaged_01")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R4")
+
+[node name="Collision" type="CollisionShape3D" parent="ServiceWestRamp"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R5")
+
+[node name="ServiceBank0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_dirt")
+position = Vector3(19.00000, 0.20000, -74.00000)
+mesh = SubResource("R6")
+
+[node name="ServiceBank1" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(39.00000, 0.20000, -75.00000)
+mesh = SubResource("R6")
+
+[node name="ServiceBank2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(40.00000, 0.20000, -59.00000)
+mesh = SubResource("R6")
+
+[node name="HubSoilIsland" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_forrest_ground_01")
+position = Vector3(-1.00000, 0.01200, -5.00000)
+mesh = SubResource("R7")
+
+[node name="EdgeStall0" parent="." instance=ExtResource("14")]
+position = Vector3(-24.00000, 0.00000, 9.00000)
+rotation = Vector3(0.00000, 0.45000, 0.00000)
+
+[node name="EdgeStall1" parent="." instance=ExtResource("14")]
+position = Vector3(20.00000, 0.00000, 13.00000)
+rotation = Vector3(0.00000, -0.50000, 0.00000)
+
+[node name="EdgeStall2" parent="." instance=ExtResource("14")]
+position = Vector3(24.00000, 0.00000, -27.00000)
+rotation = Vector3(0.00000, -0.40000, 0.00000)
+
+[node name="RouteLantern0" parent="." instance=ExtResource("15")]
+position = Vector3(-15.00000, 0.00000, 13.00000)
+
+[node name="RouteLantern1" parent="." instance=ExtResource("15")]
+position = Vector3(17.00000, 0.00000, 8.00000)
+
+[node name="RouteLantern2" parent="." instance=ExtResource("15")]
+position = Vector3(-18.00000, 0.00000, -18.00000)
+
+[node name="RouteLantern3" parent="." instance=ExtResource("15")]
+position = Vector3(14.00000, 0.00000, -25.00000)
+
+[node name="RouteLantern4" parent="." instance=ExtResource("15")]
+position = Vector3(-31.00000, 0.00000, -8.00000)
+
+[node name="RouteLantern5" parent="." instance=ExtResource("15")]
+position = Vector3(33.00000, 0.00000, 1.00000)
+
+[node name="RouteLantern6" parent="." instance=ExtResource("15")]
+position = Vector3(23.00000, 0.00000, -43.00000)
+
+[node name="RouteLantern7" parent="." instance=ExtResource("15")]
+position = Vector3(-31.00000, 0.00000, -40.00000)
+
+[node name="RouteSign0" type="Label3D" parent="."]
+position = Vector3(-16.00000, 2.50000, -4.00000)
+text = "A  /  MIRROR GROUNDS"
+font_size = 25
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+rotation = Vector3(0.00000, 0.50000, 0.00000)
+
+[node name="RouteSign1" type="Label3D" parent="."]
+position = Vector3(17.00000, 2.50000, 0.00000)
+text = "B  /  PRIZE GARDENS"
+font_size = 25
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+rotation = Vector3(0.00000, -0.50000, 0.00000)
+
+[node name="RouteSign2" type="Label3D" parent="."]
+position = Vector3(6.00000, 2.50000, -29.00000)
+text = "C  /  SERVICE YARD"
+font_size = 25
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="RouteSign3" type="Label3D" parent="."]
+position = Vector3(-13.00000, 3.00000, -30.00000)
+text = "MIDNIGHT LIVE  /  STAGE"
+font_size = 25
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="RouteSign4" type="Label3D" parent="."]
+position = Vector3(-30.00000, 2.80000, -42.00000)
+text = "BROADCAST CONTROL"
+font_size = 25
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+rotation = Vector3(0.00000, 0.35000, 0.00000)
+
+[node name="Perimeter0" type="StaticBody3D" parent="."]
+position = Vector3(3.50000, 1.40000, 50.50000)
+
+rotation = Vector3(0.00000, 0.02439, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter0"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R8")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R9")
+
+[node name="BoundaryBank0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(-17.00000, 0.20000, 51.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree0" type="MeshInstance3D" parent="."]
+position = Vector3(-16.70000, 4.00000, 51.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch0" type="MeshInstance3D" parent="."]
+position = Vector3(-18.25000, 6.00000, 50.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter1" type="StaticBody3D" parent="."]
+position = Vector3(27.50000, 1.40000, 42.50000)
+
+rotation = Vector3(0.00000, 1.13417, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter1"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R14")
+
+[node name="Perimeter2" type="StaticBody3D" parent="."]
+position = Vector3(33.50000, 1.40000, 26.50000)
+
+rotation = Vector3(0.00000, 1.28474, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter2"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R15")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R16")
+
+[node name="BoundaryBank2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_forrest_ground_01")
+position = Vector3(31.00000, 0.20000, 35.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree2" type="MeshInstance3D" parent="."]
+position = Vector3(31.30000, 4.00000, 35.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch2" type="MeshInstance3D" parent="."]
+position = Vector3(29.75000, 6.00000, 34.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter3" type="StaticBody3D" parent="."]
+position = Vector3(48.00000, 1.40000, 13.50000)
+
+rotation = Vector3(0.00000, 0.35877, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter3"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R17")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R18")
+
+[node name="Perimeter4" type="StaticBody3D" parent="."]
+position = Vector3(64.00000, 1.40000, -1.50000)
+
+rotation = Vector3(0.00000, 1.20682, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter4"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R19")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter4"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R20")
+
+[node name="BoundaryBank4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(60.00000, 0.20000, 9.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree4" type="MeshInstance3D" parent="."]
+position = Vector3(60.30000, 4.00000, 9.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch4" type="MeshInstance3D" parent="."]
+position = Vector3(58.75000, 6.00000, 8.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter5" type="StaticBody3D" parent="."]
+position = Vector3(65.00000, 1.40000, -22.00000)
+
+rotation = Vector3(0.00000, 1.86225, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter5"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R21")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R22")
+
+[node name="Perimeter6" type="StaticBody3D" parent="."]
+position = Vector3(55.50000, 1.40000, -36.50000)
+
+rotation = Vector3(0.00000, 2.53605, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter6"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R23")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter6"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R24")
+
+[node name="BoundaryBank6" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_forrest_ground_01")
+position = Vector3(62.00000, 0.20000, -32.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree6" type="MeshInstance3D" parent="."]
+position = Vector3(62.30000, 4.00000, -32.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch6" type="MeshInstance3D" parent="."]
+position = Vector3(60.75000, 6.00000, -32.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter7" type="StaticBody3D" parent="."]
+position = Vector3(50.00000, 1.40000, -56.50000)
+
+rotation = Vector3(0.00000, 1.50637, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter7"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R25")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter7"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R26")
+
+[node name="Perimeter8" type="StaticBody3D" parent="."]
+position = Vector3(45.50000, 1.40000, -78.00000)
+
+rotation = Vector3(0.00000, 2.31274, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter8"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R27")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter8"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R28")
+
+[node name="BoundaryBank8" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(51.00000, 0.20000, -72.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree8" type="MeshInstance3D" parent="."]
+position = Vector3(51.30000, 4.00000, -72.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch8" type="MeshInstance3D" parent="."]
+position = Vector3(49.75000, 6.00000, -72.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter9" type="StaticBody3D" parent="."]
+position = Vector3(31.00000, 1.40000, -86.00000)
+
+rotation = Vector3(0.00000, 2.92292, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter9"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R29")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter9"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R30")
+
+[node name="Perimeter10" type="StaticBody3D" parent="."]
+position = Vector3(13.50000, 1.40000, -83.00000)
+
+rotation = Vector3(0.00000, -2.60987, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter10"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R31")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter10"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R32")
+
+[node name="BoundaryBank10" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_forrest_ground_01")
+position = Vector3(22.00000, 0.20000, -88.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree10" type="MeshInstance3D" parent="."]
+position = Vector3(22.30000, 4.00000, -88.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch10" type="MeshInstance3D" parent="."]
+position = Vector3(20.75000, 6.00000, -88.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter11" type="StaticBody3D" parent="."]
+position = Vector3(-2.50000, 1.40000, -72.50000)
+
+rotation = Vector3(0.00000, -2.50884, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter11"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R33")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter11"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R34")
+
+[node name="Perimeter12" type="StaticBody3D" parent="."]
+position = Vector3(-14.50000, 1.40000, -74.50000)
+
+rotation = Vector3(0.00000, 2.11122, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter12"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R35")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter12"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R36")
+
+[node name="BoundaryBank12" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(-10.00000, 0.20000, -67.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree12" type="MeshInstance3D" parent="."]
+position = Vector3(-9.70000, 4.00000, -67.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch12" type="MeshInstance3D" parent="."]
+position = Vector3(-11.25000, 6.00000, -67.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter13" type="StaticBody3D" parent="."]
+position = Vector3(-17.00000, 1.40000, -93.50000)
+
+rotation = Vector3(0.00000, 1.39861, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter13"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R37")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter13"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R38")
+
+[node name="Perimeter14" type="StaticBody3D" parent="."]
+position = Vector3(-21.00000, 1.40000, -110.50000)
+
+rotation = Vector3(0.00000, 2.39965, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter14"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R27")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter14"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R28")
+
+[node name="BoundaryBank14" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_forrest_ground_01")
+position = Vector3(-15.00000, 0.20000, -105.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree14" type="MeshInstance3D" parent="."]
+position = Vector3(-14.70000, 4.00000, -105.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch14" type="MeshInstance3D" parent="."]
+position = Vector3(-16.25000, 6.00000, -105.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter15" type="StaticBody3D" parent="."]
+position = Vector3(-38.00000, 1.40000, -118.00000)
+
+rotation = Vector3(0.00000, 2.96174, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter15"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R39")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter15"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R40")
+
+[node name="Perimeter16" type="StaticBody3D" parent="."]
+position = Vector3(-62.00000, 1.40000, -114.00000)
+
+rotation = Vector3(0.00000, -2.70918, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter16"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R41")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter16"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R42")
+
+[node name="BoundaryBank16" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(-49.00000, 0.20000, -120.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree16" type="MeshInstance3D" parent="."]
+position = Vector3(-48.70000, 4.00000, -120.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch16" type="MeshInstance3D" parent="."]
+position = Vector3(-50.25000, 6.00000, -120.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter17" type="StaticBody3D" parent="."]
+position = Vector3(-81.00000, 1.40000, -97.50000)
+
+rotation = Vector3(0.00000, -2.08994, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter17"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R43")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter17"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R44")
+
+[node name="Perimeter18" type="StaticBody3D" parent="."]
+position = Vector3(-84.50000, 1.40000, -73.50000)
+
+rotation = Vector3(0.00000, -1.38769, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter18"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R45")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter18"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R46")
+
+[node name="BoundaryBank18" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_forrest_ground_01")
+position = Vector3(-87.00000, 0.20000, -87.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree18" type="MeshInstance3D" parent="."]
+position = Vector3(-86.70000, 4.00000, -87.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch18" type="MeshInstance3D" parent="."]
+position = Vector3(-88.25000, 6.00000, -87.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter19" type="StaticBody3D" parent="."]
+position = Vector3(-78.00000, 1.40000, -52.00000)
+
+rotation = Vector3(0.00000, -1.10715, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter19"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R47")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter19"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R48")
+
+[node name="Perimeter20" type="StaticBody3D" parent="."]
+position = Vector3(-71.00000, 1.40000, -35.50000)
+
+rotation = Vector3(0.00000, -1.23150, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter20"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R49")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter20"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R50")
+
+[node name="BoundaryBank20" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(-74.00000, 0.20000, -44.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree20" type="MeshInstance3D" parent="."]
+position = Vector3(-73.70000, 4.00000, -44.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch20" type="MeshInstance3D" parent="."]
+position = Vector3(-75.25000, 6.00000, -44.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter21" type="StaticBody3D" parent="."]
+position = Vector3(-65.50000, 1.40000, -15.50000)
+
+rotation = Vector3(0.00000, -1.35674, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter21"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R51")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter21"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R52")
+
+[node name="Perimeter22" type="StaticBody3D" parent="."]
+position = Vector3(-54.00000, 1.40000, 3.00000)
+
+rotation = Vector3(0.00000, -0.66104, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter22"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R53")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter22"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R54")
+
+[node name="BoundaryBank22" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_forrest_ground_01")
+position = Vector3(-63.00000, 0.20000, -4.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree22" type="MeshInstance3D" parent="."]
+position = Vector3(-62.70000, 4.00000, -4.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch22" type="MeshInstance3D" parent="."]
+position = Vector3(-64.25000, 6.00000, -4.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter23" type="StaticBody3D" parent="."]
+position = Vector3(-37.50000, 1.40000, 15.00000)
+
+rotation = Vector3(0.00000, -0.58800, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter23"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R49")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter23"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R50")
+
+[node name="Perimeter24" type="StaticBody3D" parent="."]
+position = Vector3(-28.00000, 1.40000, 29.50000)
+
+rotation = Vector3(0.00000, -1.36330, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter24"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R55")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R56")
+
+[node name="BoundaryBank24" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rocks_ground_03")
+position = Vector3(-30.00000, 0.20000, 20.00000)
+mesh = SubResource("R10")
+
+[node name="DeadTree24" type="MeshInstance3D" parent="."]
+position = Vector3(-29.70000, 4.00000, 20.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, -0.07486)
+
+[node name="TreeBranch24" type="MeshInstance3D" parent="."]
+position = Vector3(-31.25000, 6.00000, 19.50000)
+mesh = SubResource("R12")
+rotation = Vector3(-0.30275, 0.00000, 0.89606)
+
+[node name="Perimeter25" type="StaticBody3D" parent="."]
+position = Vector3(-21.50000, 1.40000, 45.00000)
+
+rotation = Vector3(0.00000, -0.92730, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Perimeter25"]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R57")
+
+[node name="Collision" type="CollisionShape3D" parent="Perimeter25"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R58")
+
+[node name="SpawnWaypoint" type="Marker3D" parent="."]
+position = Vector3(10.60000, 0.12000, 43.70000)
+
+
+[node name="EntranceOutsideWaypoint" type="Marker3D" parent="."]
+position = Vector3(10.60000, 0.00000, 43.00000)
+
+
+[node name="EntranceGateWaypoint" type="Marker3D" parent="."]
+position = Vector3(8.00000, 0.00000, 32.00000)
+
+
+[node name="EntranceInsideWaypoint" type="Marker3D" parent="."]
+position = Vector3(6.20000, 0.00000, 24.00000)
+
+
+[node name="TicketApproachWaypoint" type="Marker3D" parent="."]
+position = Vector3(-10.10485, 0.00000, 27.91922)
+
+
+[node name="TicketInteriorWaypoint" type="Marker3D" parent="."]
+position = Vector3(-11.00000, 0.00000, 23.00000)
+
+
+[node name="HubSouthWaypoint" type="Marker3D" parent="."]
+position = Vector3(2.00000, 0.00000, 14.00000)
+
+
+[node name="HubWestWaypoint" type="Marker3D" parent="."]
+position = Vector3(-16.00000, 0.00000, -5.00000)
+
+
+[node name="HubNorthWaypoint" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, -25.00000)
+
+
+[node name="HubEastWaypoint" type="Marker3D" parent="."]
+position = Vector3(17.00000, 0.00000, -4.00000)
+
+
+[node name="HubLoopSouthWaypoint" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 14.00000)
+
+
+[node name="MirrorApproachWaypoint" type="Marker3D" parent="."]
+position = Vector3(-31.00000, 0.00000, -8.00000)
+
+
+[node name="MirrorEntryWaypoint" type="Marker3D" parent="."]
+position = Vector3(-43.00000, 0.00000, -14.00000)
+
+
+[node name="MirrorCourtWaypoint" type="Marker3D" parent="."]
+position = Vector3(-44.00000, 0.00000, -23.00000)
+
+
+[node name="Fuse1StandoffWaypoint" type="Marker3D" parent="."]
+position = Vector3(-45.80000, 0.00000, -25.00000)
+
+
+[node name="MirrorExitWaypoint" type="Marker3D" parent="."]
+position = Vector3(-49.00000, 0.00000, -32.00000)
+
+
+[node name="MirrorReturnWaypoint" type="Marker3D" parent="."]
+position = Vector3(-37.00000, 0.00000, -39.00000)
+
+
+[node name="MirrorHubReturnWaypoint" type="Marker3D" parent="."]
+position = Vector3(-21.00000, 0.00000, -27.00000)
+
+
+[node name="PrizeApproachWaypoint" type="Marker3D" parent="."]
+position = Vector3(33.00000, 0.00000, 2.00000)
+
+
+[node name="PrizeEntryWaypoint" type="Marker3D" parent="."]
+position = Vector3(45.00000, 0.00000, -3.00000)
+
+
+[node name="PrizeCourtWaypoint" type="Marker3D" parent="."]
+position = Vector3(47.00000, 0.00000, -12.00000)
+
+
+[node name="Fuse2StandoffWaypoint" type="Marker3D" parent="."]
+position = Vector3(49.00000, 0.00000, -14.00000)
+
+
+[node name="PrizeExitWaypoint" type="Marker3D" parent="."]
+position = Vector3(52.00000, 0.00000, -22.00000)
+
+
+[node name="PrizeReturnWaypoint" type="Marker3D" parent="."]
+position = Vector3(41.00000, 0.00000, -30.00000)
+
+
+[node name="PrizeHubReturnWaypoint" type="Marker3D" parent="."]
+position = Vector3(20.00000, 0.00000, -20.00000)
+
+
+[node name="ServiceApproachWaypoint" type="Marker3D" parent="."]
+position = Vector3(11.00000, 0.00000, -38.00000)
+
+
+[node name="ServiceRampFootWaypoint" type="Marker3D" parent="."]
+position = Vector3(23.00000, 0.00000, -44.00000)
+
+
+[node name="ServiceRampTopWaypoint" type="Marker3D" parent="."]
+position = Vector3(23.00000, 0.80000, -57.00000)
+
+
+[node name="ServiceDoorApproachWaypoint" type="Marker3D" parent="."]
+position = Vector3(29.10485, 0.80000, -60.08078)
+
+
+[node name="ServiceInteriorWaypoint" type="Marker3D" parent="."]
+position = Vector3(30.00000, 0.80000, -65.00000)
+
+
+[node name="Fuse3StandoffWaypoint" type="Marker3D" parent="."]
+position = Vector3(30.26854, 0.80000, -66.47577)
+
+
+[node name="ServiceWestYardWaypoint" type="Marker3D" parent="."]
+position = Vector3(19.00000, 0.80000, -68.00000)
+
+
+[node name="ServiceWestRampFootWaypoint" type="Marker3D" parent="."]
+position = Vector3(5.00000, 0.00000, -68.00000)
+
+
+[node name="ServiceReturnWaypoint" type="Marker3D" parent="."]
+position = Vector3(-2.00000, 0.00000, -47.00000)
+
+
+[node name="ServiceHubReturnWaypoint" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, -29.00000)
+
+
+[node name="StageApproachWaypoint" type="Marker3D" parent="."]
+position = Vector3(-16.00000, 0.00000, -31.00000)
+
+
+[node name="StageRampFootWaypoint" type="Marker3D" parent="."]
+position = Vector3(-16.86591, 0.00000, -38.60881)
+
+
+[node name="StageDeckWaypoint" type="Marker3D" parent="."]
+position = Vector3(-15.25779, 0.70000, -44.90674)
+
+
+[node name="ControlApproachWaypoint" type="Marker3D" parent="."]
+position = Vector3(-38.21198, 0.00000, -42.17940)
+
+
+[node name="ControlInteriorWaypoint" type="Marker3D" parent="."]
+position = Vector3(-40.00000, 0.00000, -51.00000)
+
+
+[node name="ControlWestDoorWaypoint" type="Marker3D" parent="."]
+position = Vector3(-46.27774, 0.00000, -51.76812)
+
+
+[node name="BackstageTurnWaypoint" type="Marker3D" parent="."]
+position = Vector3(-56.07840, 0.00000, -49.78142)
+
+
+[node name="BackstageNorthWaypoint" type="Marker3D" parent="."]
+position = Vector3(-57.07175, 0.00000, -54.68176)
+
+
+[node name="OfficeInteriorWaypoint" type="Marker3D" parent="."]
+position = Vector3(-58.66111, 0.00000, -62.52229)
+
+
+[node name="OfficeExitWaypoint" type="Marker3D" parent="."]
+position = Vector3(-53.17804, 0.00000, -65.67444)
+
+
+[node name="TheatreSideEntryWaypoint" type="Marker3D" parent="."]
+position = Vector3(-51.21791, 0.00000, -66.07178)
+
+
+[node name="TheatreAudienceWaypoint" type="Marker3D" parent="."]
+position = Vector3(-40.05312, 0.00000, -71.39601)
+
+
+[node name="TheatreRampFootWaypoint" type="Marker3D" parent="."]
+position = Vector3(-45.76141, 0.00000, -79.42193)
+
+
+[node name="TheatreStageWaypoint" type="Marker3D" parent="."]
+position = Vector3(-47.25143, 0.90000, -86.77243)
+
+
+[node name="TheatreRampReturnWaypoint" type="Marker3D" parent="."]
+position = Vector3(-45.76141, 0.00000, -79.42193)
+
+
+[node name="TheatreAisleWaypoint" type="Marker3D" parent="."]
+position = Vector3(-42.49675, 0.00000, -83.45083)
+
+
+[node name="TheatreSideAisleWaypoint" type="Marker3D" parent="."]
+position = Vector3(-32.69609, 0.00000, -85.43752)
+
+
+[node name="TheatreRearExitWaypoint" type="Marker3D" parent="."]
+position = Vector3(-34.52385, 0.00000, -94.45413)
+
+
+[node name="EndingInteriorWaypoint" type="Marker3D" parent="."]
+position = Vector3(-35.91453, 0.00000, -101.31460)
+
+
+[node name="EndingChoiceWaypoint" type="Marker3D" parent="."]
+position = Vector3(-36.11320, 0.00000, -102.29467)
+
+
+[node name="StageDepartureWaypoint" type="Marker3D" parent="."]
+position = Vector3(-17.73183, 0, -35.21761)

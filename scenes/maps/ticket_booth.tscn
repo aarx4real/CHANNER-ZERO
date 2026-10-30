@@ -1,0 +1,264 @@
+[gd_scene load_steps=28 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/red.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/detail/office_detail.tscn" id="Phase3Detail"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/ticket_tv_foundation.tscn" id="CZ_ChannelZeroFoundation"]
+
+[ext_resource type="Material" path="res://materials/pbr/weathered_planks.tres" id="PBR_weathered_planks"]
+
+[ext_resource type="Material" path="res://materials/pbr/roof_07.tres" id="PBR_roof_07"]
+
+[ext_resource type="Material" path="res://materials/pbr/old_wood_floor.tres" id="PBR_old_wood_floor"]
+
+[ext_resource type="Material" path="res://materials/pbr/painted_wood_red.tres" id="PBR_painted_wood_red"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(6.00000, 3.50000, 0.22000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(6.00000, 3.50000, 0.22000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(0.22000, 3.50000, 6.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(0.22000, 3.50000, 6.00000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(1.80000, 3.50000, 0.22000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(1.80000, 3.50000, 0.22000)
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(2.40000, 1.00000, 0.22000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(2.40000, 1.00000, 0.22000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(6.40000, 0.20000, 6.40000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(6.40000, 0.20000, 6.40000)
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(6.00000, 0.16000, 6.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(6.00000, 0.16000, 6.00000)
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(2.50000, 1.10000, 0.75000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R14"]
+size = Vector3(2.50000, 1.10000, 0.75000)
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(1.45000, 1.10000, 0.80000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(1.45000, 1.10000, 0.80000)
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(1.20000, 0.12000, 1.20000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R18"]
+size = Vector3(1.20000, 0.12000, 1.20000)
+
+[node name="TicketBooth" type="Node3D"]
+
+[node name="BackWall" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 1.75000, -3.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="BackWall"]
+material_override = ExtResource("PBR_weathered_planks")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="BackWall"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Side-3.0" type="StaticBody3D" parent="."]
+position = Vector3(-3.00000, 1.75000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Side-3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Side-3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Side3.0" type="StaticBody3D" parent="."]
+position = Vector3(3.00000, 1.75000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Side3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Side3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Front-1" type="StaticBody3D" parent="."]
+position = Vector3(-2.10000, 1.75000, 3.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Front-1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Front-1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="Front1" type="StaticBody3D" parent="."]
+position = Vector3(2.10000, 1.75000, 3.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Front1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Front1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="DoorLintel" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.00000, 3.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="DoorLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="DoorLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="Roof" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.60000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Roof"]
+material_override = ExtResource("PBR_roof_07")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="Roof"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R10")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, -0.08000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Floor"]
+material_override = ExtResource("PBR_old_wood_floor")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R11")
+
+[node name="Collision" type="CollisionShape3D" parent="Floor"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R12")
+
+[node name="Counter" type="StaticBody3D" parent="."]
+position = Vector3(-1.70000, 0.55000, -0.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Counter"]
+material_override = ExtResource("PBR_painted_wood_red")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Counter"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R14")
+
+[node name="TVLocation" type="StaticBody3D" parent="."]
+position = Vector3(1.65000, 0.55000, -1.70000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="TVLocation"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R15")
+
+[node name="Collision" type="CollisionShape3D" parent="TVLocation"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R16")
+
+[node name="Signal" type="Label3D" parent="."]
+position = Vector3(1.65000, 2.70000, -2.75000)
+text = "SIGNAL 02 / NO RECEPTION"
+font_size = 14
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="Shelf1.5" type="StaticBody3D" parent="."]
+position = Vector3(-2.30000, 1.50000, -2.20000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Shelf1.5"]
+material_override = ExtResource("PBR_weathered_planks")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R17")
+
+[node name="Collision" type="CollisionShape3D" parent="Shelf1.5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R18")
+
+[node name="Shelf2.2" type="StaticBody3D" parent="."]
+position = Vector3(-2.30000, 2.20000, -2.20000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Shelf2.2"]
+material_override = ExtResource("PBR_weathered_planks")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R17")
+
+[node name="Collision" type="CollisionShape3D" parent="Shelf2.2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R18")
+
+[node name="Title" type="Label3D" parent="."]
+position = Vector3(0.00000, 2.95000, 3.20000)
+text = "TICKETS / OFFICE"
+font_size = 30
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="Interior" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 2.70000, 0.00000)
+light_color = Color(1, 0.53, 0.23, 1)
+light_energy = 1.1
+omni_range = 6
+shadow_enabled = true
+
+[node name="EnvironmentalDetail" parent="." instance=ExtResource("Phase3Detail")]
+
+[node name="ChannelZeroFoundation" parent="." instance=ExtResource("CZ_ChannelZeroFoundation")]
+position = Vector3(0.00000, 0.00000, 0.00000)

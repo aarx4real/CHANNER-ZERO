@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://134axw6fnix1"]
+
+[ext_resource type="Shader" uid="uid://be075sqr4hqrd" path="res://shaders/weathered.gdshader" id="1"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1")
+shader_parameter/base_color = Color(0.27, 0.18, 0.105, 1)
+shader_parameter/grain = 1.8
+shader_parameter/roughness_value = 0.94
+shader_parameter/surface_kind = 0

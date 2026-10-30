@@ -1,0 +1,78 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Material" path="res://materials/wood.tres" id="1"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(2.00000, 0.16000, 2.80000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(2.00000, 0.16000, 2.80000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(2.00000, 3.40000, 0.18000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(2.00000, 3.40000, 0.18000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(2.00000, 0.20000, 3.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(2.00000, 0.20000, 3.00000)
+
+[node name="OfficeTheatreConnector" type="Node3D"]
+
+[node name="Floor" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, -0.08000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Floor"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Floor"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Side-1.5" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 1.70000, -1.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Side-1.5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Side-1.5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Side1.5" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 1.70000, 1.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Side1.5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Side1.5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Roof" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.50000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Roof"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Roof"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="FinalTheatreEntranceMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 0.00000)
+

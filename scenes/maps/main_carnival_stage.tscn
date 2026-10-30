@@ -1,0 +1,283 @@
+[gd_scene load_steps=26 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/pbr/velour_velvet.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_02.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/pbr/velour_velvet.tres" id="4"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/television_placeholder.tscn" id="6"]
+
+[ext_resource type="Material" path="res://materials/pbr/old_wood_floor.tres" id="PBR_old_wood_floor"]
+
+[ext_resource type="Material" path="res://materials/pbr/velour_velvet.tres" id="PBR_velour_velvet"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(12.00000, 0.70000, 4.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(12.00000, 0.70000, 4.00000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(2.80000, 0.16000, 4.20000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(2.80000, 0.16000, 4.20000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(12.00000, 4.50000, 0.18000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(12.00000, 4.50000, 0.18000)
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(0.18000, 5.40000, 0.18000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(0.18000, 5.40000, 0.18000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(3.00000, 0.90000, 0.65000)
+material = ExtResource("4")
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(3.00000, 0.90000, 0.65000)
+
+[sub_resource type="CapsuleMesh" id="R11"]
+radius = 0.14
+height = 0.3
+material = ExtResource("5")
+
+[sub_resource type="BoxMesh" id="R12"]
+size = Vector3(0.4, 0.6, 0.22)
+material = ExtResource("5")
+
+[sub_resource type="CylinderMesh" id="R13"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 0.8
+radial_segments = 8
+material = ExtResource("1")
+
+[sub_resource type="BoxMesh" id="R14"]
+size = Vector3(12.00000, 0.16000, 0.16000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R15"]
+size = Vector3(12.00000, 0.16000, 0.16000)
+
+[sub_resource type="BoxMesh" id="R16"]
+size = Vector3(1.15000, 0.50000, 0.70000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R17"]
+size = Vector3(1.15000, 0.50000, 0.70000)
+
+[node name="MainCarnivalStage" type="Node3D"]
+
+[node name="Stage" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.35000, -2.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Stage"]
+material_override = ExtResource("PBR_old_wood_floor")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Stage"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="StageRamp" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.28000, 1.50000)
+
+rotation = Vector3(0.17000, 0.00000, 0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="StageRamp"]
+material_override = ExtResource("PBR_old_wood_floor")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="StageRamp"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Backdrop" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 2.60000, -4.60000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Backdrop"]
+material_override = ExtResource("PBR_velour_velvet")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Backdrop"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="Upright-1" type="StaticBody3D" parent="."]
+position = Vector3(-6.00000, 2.70000, -2.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Upright-1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="Upright-1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="Bench-1" type="StaticBody3D" parent="."]
+position = Vector3(-4.00000, 0.45000, 4.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Bench-1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="Bench-1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R10")
+
+[node name="AudienceStand-1" type="Node3D" parent="."]
+position = Vector3(-4.00000, 0.00000, 5.10000)
+
+
+[node name="Head" type="MeshInstance3D" parent="AudienceStand-1"]
+position = Vector3(0.00000, 1.55000, 0.00000)
+mesh = SubResource("R11")
+
+[node name="Torso" type="MeshInstance3D" parent="AudienceStand-1"]
+position = Vector3(0.00000, 1.10000, 0.00000)
+mesh = SubResource("R12")
+
+[node name="Leg-1" type="MeshInstance3D" parent="AudienceStand-1"]
+position = Vector3(-0.12000, 0.40000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Leg1" type="MeshInstance3D" parent="AudienceStand-1"]
+position = Vector3(0.12000, 0.40000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="AudienceStand-1PuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(-4.00000, 0.00000, 5.10000)
+
+
+[node name="StageLightingPosition-1" type="Marker3D" parent="."]
+position = Vector3(-4.00000, 4.70000, -2.20000)
+
+
+[node name="Upright1" type="StaticBody3D" parent="."]
+position = Vector3(6.00000, 2.70000, -2.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Upright1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="Upright1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="Bench1" type="StaticBody3D" parent="."]
+position = Vector3(4.00000, 0.45000, 4.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Bench1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="Bench1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R10")
+
+[node name="AudienceStand1" type="Node3D" parent="."]
+position = Vector3(4.00000, 0.00000, 5.10000)
+
+
+[node name="Head" type="MeshInstance3D" parent="AudienceStand1"]
+position = Vector3(0.00000, 1.55000, 0.00000)
+mesh = SubResource("R11")
+
+[node name="Torso" type="MeshInstance3D" parent="AudienceStand1"]
+position = Vector3(0.00000, 1.10000, 0.00000)
+mesh = SubResource("R12")
+
+[node name="Leg-1" type="MeshInstance3D" parent="AudienceStand1"]
+position = Vector3(-0.12000, 0.40000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Leg1" type="MeshInstance3D" parent="AudienceStand1"]
+position = Vector3(0.12000, 0.40000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="AudienceStand1PuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(4.00000, 0.00000, 5.10000)
+
+
+[node name="StageLightingPosition1" type="Marker3D" parent="."]
+position = Vector3(4.00000, 4.70000, -2.20000)
+
+
+[node name="LightingBar" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 5.20000, -2.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="LightingBar"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R14")
+
+[node name="Collision" type="CollisionShape3D" parent="LightingBar"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R15")
+
+[node name="Title" type="Label3D" parent="."]
+position = Vector3(0.00000, 4.40000, -4.43000)
+text = "MIDNIGHT LIVE"
+font_size = 38
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="TVStand" type="StaticBody3D" parent="."]
+position = Vector3(2.70000, 0.95000, -2.70000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="TVStand"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R16")
+
+[node name="Collision" type="CollisionShape3D" parent="TVStand"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R17")
+
+[node name="StageTelevision" parent="." instance=ExtResource("6")]
+position = Vector3(2.70000, 1.20000, -2.70000)
+
+[node name="StageTelevisionMarker" type="Marker3D" parent="."]
+position = Vector3(2.70000, 1.60000, -2.35000)
+
+
+[node name="MainStageStoryEventMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.70000, -2.50000)
+
+
+[node name="ControlRoomRouteDoorMarker" type="Marker3D" parent="."]
+position = Vector3(-9.00000, 0.00000, 2.00000)
+
+
+[node name="StagePool" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 4.00000, -2.00000)
+light_color = Color(1, 0.53, 0.23, 1)
+light_energy = 1.7
+omni_range = 11
+shadow_enabled = false

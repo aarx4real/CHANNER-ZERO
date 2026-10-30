@@ -1,0 +1,114 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/television_placeholder.tscn" id="2"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/pbr/dirty_concrete.tres" id="PBR_dirty_concrete"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(1.60000, 0.70000, 1.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(1.60000, 0.70000, 1.00000)
+
+[sub_resource type="CapsuleMesh" id="R3"]
+radius = 0.14
+height = 0.3
+material = ExtResource("3")
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(0.4, 0.6, 0.22)
+material = ExtResource("3")
+
+[sub_resource type="CylinderMesh" id="R5"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 0.8
+radial_segments = 8
+material = ExtResource("1")
+
+[node name="FinalTheatreFoundation" type="Node3D"]
+
+[node name="EndingTVPlinth" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 1.25000, -9.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="EndingTVPlinth"]
+material_override = ExtResource("PBR_dirty_concrete")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="EndingTVPlinth"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="EndingTelevision" parent="." instance=ExtResource("2")]
+position = Vector3(0.00000, 1.60000, -9.00000)
+
+[node name="EndingTelevisionMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 2.00000, -8.65000)
+
+
+[node name="EndingChoiceMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.90000, -7.20000)
+
+
+[node name="FinalIdentityRevealMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.90000, -8.00000)
+
+
+[node name="FinalCinematicCameraMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 1.72000, -3.00000)
+
+
+[node name="FinalAudience0" type="Node3D" parent="."]
+position = Vector3(-10.00000, 0.90000, 3.00000)
+
+
+[node name="Head" type="MeshInstance3D" parent="FinalAudience0"]
+position = Vector3(0.00000, 1.55000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Torso" type="MeshInstance3D" parent="FinalAudience0"]
+position = Vector3(0.00000, 1.10000, 0.00000)
+mesh = SubResource("R4")
+
+[node name="Leg-1" type="MeshInstance3D" parent="FinalAudience0"]
+position = Vector3(-0.12000, 0.40000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Leg1" type="MeshInstance3D" parent="FinalAudience0"]
+position = Vector3(0.12000, 0.40000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="FinalAudience0PuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(-10.00000, 0.90000, 3.00000)
+
+
+[node name="FinalAudience1" type="Node3D" parent="."]
+position = Vector3(10.00000, 0.90000, 3.00000)
+
+
+[node name="Head" type="MeshInstance3D" parent="FinalAudience1"]
+position = Vector3(0.00000, 1.55000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Torso" type="MeshInstance3D" parent="FinalAudience1"]
+position = Vector3(0.00000, 1.10000, 0.00000)
+mesh = SubResource("R4")
+
+[node name="Leg-1" type="MeshInstance3D" parent="FinalAudience1"]
+position = Vector3(-0.12000, 0.40000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Leg1" type="MeshInstance3D" parent="FinalAudience1"]
+position = Vector3(0.12000, 0.40000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="FinalAudience1PuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(10.00000, 0.90000, 3.00000)
+

@@ -1,0 +1,162 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/rust.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/seal.tres" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/gate_foundation.tscn" id="CZ_ChannelZeroFoundation"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(0.90000, 7.00000, 0.90000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(0.90000, 7.00000, 0.90000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(7.20000, 5.40000, 0.25000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(7.20000, 5.40000, 0.25000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(8.80000, 0.60000, 0.50000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(8.80000, 0.60000, 0.50000)
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(0.07000, 5.30000, 0.08000)
+material = ExtResource("1")
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(6.80000, 0.12000, 0.08000)
+material = ExtResource("3")
+
+[node name="FinalGate" type="Node3D"]
+
+[node name="Pillar-4" type="StaticBody3D" parent="."]
+position = Vector3(-4.00000, 3.50000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Pillar-4"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Pillar-4"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Pillar4" type="StaticBody3D" parent="."]
+position = Vector3(4.00000, 3.50000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Pillar4"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Pillar4"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="SealedGate" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 2.70000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SealedGate"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="SealedGate"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Crown" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 6.00000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Crown"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Crown"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="IronBar0" type="MeshInstance3D" parent="."]
+position = Vector3(-3.20000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar1" type="MeshInstance3D" parent="."]
+position = Vector3(-2.40000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar2" type="MeshInstance3D" parent="."]
+position = Vector3(-1.60000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar3" type="MeshInstance3D" parent="."]
+position = Vector3(-0.80000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar4" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar5" type="MeshInstance3D" parent="."]
+position = Vector3(0.80000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar6" type="MeshInstance3D" parent="."]
+position = Vector3(1.60000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar7" type="MeshInstance3D" parent="."]
+position = Vector3(2.40000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="IronBar8" type="MeshInstance3D" parent="."]
+position = Vector3(3.20000, 2.70000, 0.19000)
+mesh = SubResource("R7")
+
+[node name="Binding-1" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 2.80000, 0.25000)
+mesh = SubResource("R8")
+rotation = Vector3(0.00000, 0.00000, -0.65000)
+
+[node name="Binding1" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 2.80000, 0.25000)
+mesh = SubResource("R8")
+rotation = Vector3(0.00000, 0.00000, 0.65000)
+
+[node name="Title" type="Label3D" parent="."]
+position = Vector3(0.00000, 6.00000, 0.32000)
+text = "THE LAST GATE"
+font_size = 45
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="Sealed" type="Label3D" parent="."]
+position = Vector3(0.00000, 4.40000, 0.35000)
+text = "BOUND UNTIL THE FINAL ACT"
+font_size = 22
+pixel_size = 0.01
+modulate = Color(0.4, 0.7, 0.6, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="SealGlow" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 3.00000, 2.00000)
+light_color = Color(0.18, 0.65, 0.55, 1)
+light_energy = 1.5
+omni_range = 8
+shadow_enabled = false
+
+[node name="ChannelZeroFoundation" parent="." instance=ExtResource("CZ_ChannelZeroFoundation")]
+position = Vector3(0.00000, 0.00000, 0.00000)

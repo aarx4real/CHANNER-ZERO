@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="1"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(0.30000, 8.00000, 1.10000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(0.30000, 8.00000, 1.10000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(0.30000, 8.00000, 22.10000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(0.30000, 8.00000, 22.10000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(0.30000, 5.40000, 2.80000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(0.30000, 5.40000, 2.80000)
+
+[node name="TheatreOfficeDoorway" type="Node3D"]
+
+[node name="FrontWall" type="StaticBody3D" parent="."]
+position = Vector3(-14.00000, 4.00000, 12.45000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="FrontWall"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="FrontWall"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="RearWall" type="StaticBody3D" parent="."]
+position = Vector3(-14.00000, 4.00000, -1.95000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="RearWall"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="RearWall"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Lintel" type="StaticBody3D" parent="."]
+position = Vector3(-14.00000, 5.30000, 10.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Lintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Lintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="OfficeEntranceDoorMarker" type="Marker3D" parent="."]
+position = Vector3(-14.00000, 0.00000, 10.50000)
+

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/props/television_placeholder.tscn" id="1"]
+
+[ext_resource type="Script" path="res://scripts/gameplay/haunted_television.gd" id="BroadcastTV"]
+
+[node name="TicketTVFoundation" type="Node3D"]
+
+[node name="FirstHauntedTelevision" parent="." instance=ExtResource("1")]
+position = Vector3(1.65000, 1.10000, -1.70000)
+script = ExtResource("BroadcastTV")
+
+[node name="FirstHauntedTelevisionMarker" type="Marker3D" parent="."]
+position = Vector3(1.65000, 1.50000, -1.35000)
+
+
+[node name="TicketBoothStoryEventMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+
+[node name="TicketBoothDoorMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 3.00000)
+

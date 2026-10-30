@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Material" path="res://materials/rust.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/detail/barrel_detail.tscn" id="Phase3Detail"]
+
+[sub_resource type="CylinderMesh" id="R1"]
+top_radius = 0.38
+bottom_radius = 0.38
+height = 1.1
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(0.65000, 1.10000, 0.65000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(0.65000, 1.10000, 0.65000)
+
+[sub_resource type="CylinderMesh" id="R4"]
+top_radius = 0.395
+bottom_radius = 0.395
+height = 0.07
+radial_segments = 12
+material = ExtResource("2")
+
+[node name="Barrel" type="Node3D"]
+
+[node name="Drum" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 0.55000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.55000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Collision"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R2")
+
+[node name="Collision" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R3")
+
+[node name="Band0.15" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 0.15000, 0.00000)
+mesh = SubResource("R4")
+
+[node name="Band0.92" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 0.92000, 0.00000)
+mesh = SubResource("R4")
+
+[node name="EnvironmentalDetail" parent="." instance=ExtResource("Phase3Detail")]

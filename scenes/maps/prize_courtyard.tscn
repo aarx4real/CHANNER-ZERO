@@ -1,0 +1,153 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/props/open_stall_blockout.tscn" id="1"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_02.tres" id="4"]
+
+[ext_resource type="Material" path="res://materials/ochre.tres" id="5"]
+
+[sub_resource type="CapsuleMesh" id="R1"]
+radius = 0.14
+height = 0.3
+material = ExtResource("2")
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(0.4, 0.6, 0.22)
+material = ExtResource("2")
+
+[sub_resource type="CylinderMesh" id="R3"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 0.8
+radial_segments = 8
+material = ExtResource("3")
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(0.65000, 0.90000, 0.55000)
+material = ExtResource("4")
+
+[sub_resource type="BoxShape3D" id="R5"]
+size = Vector3(0.65000, 0.90000, 0.55000)
+
+[sub_resource type="CylinderMesh" id="R6"]
+top_radius = 0.055
+bottom_radius = 0.055
+height = 0.22
+radial_segments = 12
+material = ExtResource("5")
+
+[node name="PrizeCourtyard" type="Node3D"]
+
+[node name="PrizeStall0" parent="." instance=ExtResource("1")]
+position = Vector3(-8.00000, 0.00000, 5.00000)
+rotation = Vector3(0.00000, 0.40000, 0.00000)
+
+[node name="PrizeStall1" parent="." instance=ExtResource("1")]
+position = Vector3(7.00000, 0.00000, 1.00000)
+rotation = Vector3(0.00000, -0.65000, 0.00000)
+
+[node name="PrizeStall2" parent="." instance=ExtResource("1")]
+position = Vector3(0.00000, 0.00000, -9.00000)
+rotation = Vector3(0.00000, 0.12000, 0.00000)
+
+[node name="MannequinDisplay0" type="Node3D" parent="."]
+position = Vector3(-4.00000, 0.00000, -1.00000)
+
+
+[node name="Head" type="MeshInstance3D" parent="MannequinDisplay0"]
+position = Vector3(0.00000, 1.55000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Torso" type="MeshInstance3D" parent="MannequinDisplay0"]
+position = Vector3(0.00000, 1.10000, 0.00000)
+mesh = SubResource("R2")
+
+[node name="Leg-1" type="MeshInstance3D" parent="MannequinDisplay0"]
+position = Vector3(-0.12000, 0.40000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Leg1" type="MeshInstance3D" parent="MannequinDisplay0"]
+position = Vector3(0.12000, 0.40000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="MannequinDisplay0PuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(-4.00000, 0.00000, -1.00000)
+
+
+[node name="MannequinDisplay1" type="Node3D" parent="."]
+position = Vector3(5.00000, 0.00000, -5.00000)
+
+
+[node name="Head" type="MeshInstance3D" parent="MannequinDisplay1"]
+position = Vector3(0.00000, 1.55000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Torso" type="MeshInstance3D" parent="MannequinDisplay1"]
+position = Vector3(0.00000, 1.10000, 0.00000)
+mesh = SubResource("R2")
+
+[node name="Leg-1" type="MeshInstance3D" parent="MannequinDisplay1"]
+position = Vector3(-0.12000, 0.40000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Leg1" type="MeshInstance3D" parent="MannequinDisplay1"]
+position = Vector3(0.12000, 0.40000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="MannequinDisplay1PuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(5.00000, 0.00000, -5.00000)
+
+
+[node name="FusePedestal2" type="StaticBody3D" parent="."]
+position = Vector3(6.00000, 0.45000, -2.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="FusePedestal2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R4")
+
+[node name="Collision" type="CollisionShape3D" parent="FusePedestal2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R5")
+
+[node name="FusePlaceholder2" type="MeshInstance3D" parent="."]
+position = Vector3(6.00000, 1.05000, -2.00000)
+mesh = SubResource("R6")
+rotation = Vector3(1.57080, 0.00000, 0.00000)
+
+[node name="Fuse2PickupMarker" type="Marker3D" parent="."]
+position = Vector3(6.00000, 1.05000, -2.00000)
+
+
+[node name="FuseSign2" type="Label3D" parent="."]
+position = Vector3(6.00000, 1.35000, -1.68000)
+text = "FUSE 2 / POSITION"
+font_size = 15
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="MannequinStoryEventMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+
+[node name="Sign" type="Label3D" parent="."]
+position = Vector3(0.00000, 3.50000, 9.00000)
+text = "PRIZE GARDENS"
+font_size = 40
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="WarmPool" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 3.50000, 0.00000)
+light_color = Color(1, 0.53, 0.23, 1)
+light_energy = 1.5
+omni_range = 20
+shadow_enabled = false

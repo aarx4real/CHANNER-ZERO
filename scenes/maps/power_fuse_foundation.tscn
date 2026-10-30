@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_02.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/ochre.tres" id="2"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(0.65000, 0.90000, 0.55000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(0.65000, 0.90000, 0.55000)
+
+[sub_resource type="CylinderMesh" id="R3"]
+top_radius = 0.055
+bottom_radius = 0.055
+height = 0.22
+radial_segments = 12
+material = ExtResource("2")
+
+[node name="PowerFuseFoundation" type="Node3D"]
+
+[node name="FusePedestal3" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.45000, -2.60000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="FusePedestal3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="FusePedestal3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="FusePlaceholder3" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 1.05000, -2.60000)
+mesh = SubResource("R3")
+rotation = Vector3(1.57080, 0.00000, 0.00000)
+
+[node name="Fuse3PickupMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 1.05000, -2.60000)
+
+
+[node name="FuseSign3" type="Label3D" parent="."]
+position = Vector3(0.00000, 1.35000, -2.28000)
+text = "FUSE 3 / POSITION"
+font_size = 15
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="GeneratorPuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 1.50000, -3.10000)
+
+
+[node name="PowerShedDoorMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 3.50000)
+

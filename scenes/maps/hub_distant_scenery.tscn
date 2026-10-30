@@ -1,0 +1,1148 @@
+[gd_scene load_steps=74 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_02.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/red_glow.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="4"]
+
+[ext_resource type="Material" path="res://materials/red.tres" id="5"]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_04.tres" id="PBR_rusty_metal_04"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="PBR_hessian_380"]
+
+[sub_resource type="CylinderMesh" id="R1"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058505
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R2"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 16.0
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(1.50000, 1.40000, 1.40000)
+material = ExtResource("2")
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(0.12000, 0.12000, 0.12000)
+material = ExtResource("3")
+
+[sub_resource type="CylinderMesh" id="R5"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058514
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R6"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058523
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R7"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 15.999999999999998
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R8"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058527
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R9"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058483
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R10"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058474
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R11"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.582863235305855
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R12"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058585
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R13"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.582863235305844
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R14"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.582863235305847
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R15"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.582863235305858
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R16"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058447
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R17"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 15.999999999999996
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R18"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.582863235305836
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R19"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058656
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R20"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.5828632353058487
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R21"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.582863235305864
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R22"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 3.582863235305838
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R23"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 15.999999999999995
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R24"]
+top_radius = 0.3
+bottom_radius = 0.3
+height = 19.72308292331602
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R25"]
+top_radius = 0.1
+bottom_radius = 10
+height = 3
+radial_segments = 12
+material = ExtResource("4")
+
+[sub_resource type="CylinderMesh" id="R26"]
+top_radius = 9
+bottom_radius = 9
+height = 0.6
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R27"]
+top_radius = 0.07
+bottom_radius = 0.07
+height = 6
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R28"]
+top_radius = 8
+bottom_radius = 8
+height = 4
+radial_segments = 12
+material = ExtResource("4")
+
+[sub_resource type="CylinderMesh" id="R29"]
+top_radius = 0.05
+bottom_radius = 9
+height = 4
+radial_segments = 12
+material = ExtResource("5")
+
+[sub_resource type="CylinderMesh" id="R30"]
+top_radius = 7
+bottom_radius = 7
+height = 4
+radial_segments = 12
+material = ExtResource("4")
+
+[sub_resource type="CylinderMesh" id="R31"]
+top_radius = 0.05
+bottom_radius = 8
+height = 4
+radial_segments = 12
+material = ExtResource("5")
+
+[sub_resource type="CylinderMesh" id="R32"]
+top_radius = 9
+bottom_radius = 9
+height = 4
+radial_segments = 12
+material = ExtResource("4")
+
+[sub_resource type="CylinderMesh" id="R33"]
+top_radius = 0.05
+bottom_radius = 10
+height = 4
+radial_segments = 12
+material = ExtResource("5")
+
+[sub_resource type="CylinderMesh" id="R34"]
+top_radius = 11
+bottom_radius = 11
+height = 4
+radial_segments = 12
+material = ExtResource("4")
+
+[sub_resource type="CylinderMesh" id="R35"]
+top_radius = 0.05
+bottom_radius = 12
+height = 4
+radial_segments = 12
+material = ExtResource("5")
+
+[sub_resource type="CylinderMesh" id="R36"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 8.0
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R37"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 9.438276615812608
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R38"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.939370460313852
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R39"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 10.524412954423688
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R40"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.8248780563635605
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R41"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 10.992484959812163
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R42"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.6971734341559332
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R43"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 10.727892280477045
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R44"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.6769565248936162
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R45"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 9.79541643231187
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R46"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.7841130014061903
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R47"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 8.423360024179601
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R48"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.9156785857749914
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R49"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 6.94765031693114
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R50"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.9531910072835243
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R51"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 5.729592514076216
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R52"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.864410021089346
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R53"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 5.067409647004709
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R54"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.7267259289412507
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R55"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 5.123227176010585
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R56"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.6678489059044317
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R57"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 5.883379023288825
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R58"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.7453745915356094
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R59"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 7.161753505403222
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R60"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.8838436266823706
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R61"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 8.645359964263447
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R62"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.956145614707802
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R63"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 9.970959796156368
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R64"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.899642921385816
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R65"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 10.813999930324217
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R66"]
+top_radius = 0.09
+bottom_radius = 0.09
+height = 3.7630727694023878
+radial_segments = 12
+material = ExtResource("1")
+
+[node name="HubDistantScenery" type="Node3D"]
+
+[node name="Rim0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(81.79942, 19.78017, -42.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, 0.11220)
+
+[node name="Spoke0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(74.00000, 18.00000, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, -1.57080)
+
+[node name="Car0" type="MeshInstance3D" parent="."]
+position = Vector3(82.00000, 17.30000, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(82.00000, 18.00000, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim1" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(81.00717, 23.25124, -42.00000)
+mesh = SubResource("R5")
+rotation = Vector3(0.00000, 0.00000, 0.33660)
+
+[node name="Rim2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(79.46240, 26.45899, -42.00000)
+mesh = SubResource("R6")
+rotation = Vector3(0.00000, 0.00000, 0.56100)
+
+[node name="Spoke2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(73.20775, 21.47107, -42.00000)
+mesh = SubResource("R7")
+rotation = Vector3(0.00000, 0.00000, -1.12200)
+
+[node name="Car2" type="MeshInstance3D" parent="."]
+position = Vector3(80.41550, 24.24214, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(80.41550, 24.94214, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim3" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(77.24257, 29.24257, -42.00000)
+mesh = SubResource("R8")
+rotation = Vector3(0.00000, 0.00000, 0.78540)
+
+[node name="Rim4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(74.45899, 31.46240, -42.00000)
+mesh = SubResource("R9")
+rotation = Vector3(0.00000, 0.00000, 1.00980)
+
+[node name="Spoke4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(70.98792, 24.25465, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, -0.67320)
+
+[node name="Car4" type="MeshInstance3D" parent="."]
+position = Vector3(75.97584, 29.80930, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(75.97584, 30.50930, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim5" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(71.25124, 33.00717, -42.00000)
+mesh = SubResource("R5")
+rotation = Vector3(0.00000, 0.00000, 1.23420)
+
+[node name="Rim6" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(67.78017, 33.79942, -42.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, 1.45860)
+
+[node name="Spoke6" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(67.78017, 25.79942, -42.00000)
+mesh = SubResource("R7")
+rotation = Vector3(0.00000, 0.00000, -0.22440)
+
+[node name="Car6" type="MeshInstance3D" parent="."]
+position = Vector3(69.56033, 32.89885, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb6" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(69.56033, 33.59885, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim7" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(64.21983, 33.79942, -42.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, 1.68300)
+
+[node name="Rim8" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(60.74876, 33.00717, -42.00000)
+mesh = SubResource("R5")
+rotation = Vector3(0.00000, 0.00000, 1.90740)
+
+[node name="Spoke8" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(64.21983, 25.79942, -42.00000)
+mesh = SubResource("R7")
+rotation = Vector3(0.00000, 0.00000, 0.22440)
+
+[node name="Car8" type="MeshInstance3D" parent="."]
+position = Vector3(62.43967, 32.89885, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb8" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(62.43967, 33.59885, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim9" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(57.54101, 31.46240, -42.00000)
+mesh = SubResource("R9")
+rotation = Vector3(0.00000, 0.00000, 2.13180)
+
+[node name="Rim10" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(54.75743, 29.24257, -42.00000)
+mesh = SubResource("R10")
+rotation = Vector3(0.00000, 0.00000, 2.35619)
+
+[node name="Spoke10" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(61.01208, 24.25465, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, 0.67320)
+
+[node name="Car10" type="MeshInstance3D" parent="."]
+position = Vector3(56.02416, 29.80930, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb10" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(56.02416, 30.50930, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim11" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(52.53760, 26.45899, -42.00000)
+mesh = SubResource("R11")
+rotation = Vector3(0.00000, 0.00000, 2.58059)
+
+[node name="Rim12" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(50.99283, 23.25124, -42.00000)
+mesh = SubResource("R12")
+rotation = Vector3(0.00000, 0.00000, 2.80499)
+
+[node name="Spoke12" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(58.79225, 21.47107, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, 1.12200)
+
+[node name="Car12" type="MeshInstance3D" parent="."]
+position = Vector3(51.58450, 24.24214, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb12" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(51.58450, 24.94214, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim13" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(50.20058, 19.78017, -42.00000)
+mesh = SubResource("R13")
+rotation = Vector3(0.00000, 0.00000, 3.02939)
+
+[node name="Rim14" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(50.20058, 16.21983, -42.00000)
+mesh = SubResource("R14")
+rotation = Vector3(0.00000, 0.00000, -3.02939)
+
+[node name="Spoke14" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(58.00000, 18.00000, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, 1.57080)
+
+[node name="Car14" type="MeshInstance3D" parent="."]
+position = Vector3(50.00000, 17.30000, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb14" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(50.00000, 18.00000, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim15" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(50.99283, 12.74876, -42.00000)
+mesh = SubResource("R12")
+rotation = Vector3(0.00000, 0.00000, -2.80499)
+
+[node name="Rim16" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(52.53760, 9.54101, -42.00000)
+mesh = SubResource("R15")
+rotation = Vector3(0.00000, 0.00000, -2.58059)
+
+[node name="Spoke16" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(58.79225, 14.52893, -42.00000)
+mesh = SubResource("R7")
+rotation = Vector3(0.00000, 0.00000, 2.01960)
+
+[node name="Car16" type="MeshInstance3D" parent="."]
+position = Vector3(51.58450, 10.35786, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb16" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(51.58450, 11.05786, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim17" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(54.75743, 6.75743, -42.00000)
+mesh = SubResource("R16")
+rotation = Vector3(0.00000, 0.00000, -2.35619)
+
+[node name="Rim18" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(57.54101, 4.53760, -42.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, -2.13180)
+
+[node name="Spoke18" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(61.01208, 11.74535, -42.00000)
+mesh = SubResource("R17")
+rotation = Vector3(0.00000, 0.00000, 2.46839)
+
+[node name="Car18" type="MeshInstance3D" parent="."]
+position = Vector3(56.02416, 4.79070, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb18" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(56.02416, 5.49070, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim19" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(60.74876, 2.99283, -42.00000)
+mesh = SubResource("R6")
+rotation = Vector3(0.00000, 0.00000, -1.90740)
+
+[node name="Rim20" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(64.21983, 2.20058, -42.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, -1.68300)
+
+[node name="Spoke20" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(64.21983, 10.20058, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, 2.91719)
+
+[node name="Car20" type="MeshInstance3D" parent="."]
+position = Vector3(62.43967, 1.70115, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb20" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(62.43967, 2.40115, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim21" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(67.78017, 2.20058, -42.00000)
+mesh = SubResource("R18")
+rotation = Vector3(0.00000, 0.00000, -1.45860)
+
+[node name="Rim22" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(71.25124, 2.99283, -42.00000)
+mesh = SubResource("R19")
+rotation = Vector3(0.00000, 0.00000, -1.23420)
+
+[node name="Spoke22" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(67.78017, 10.20058, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, -2.91719)
+
+[node name="Car22" type="MeshInstance3D" parent="."]
+position = Vector3(69.56033, 1.70115, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb22" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(69.56033, 2.40115, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim23" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(74.45899, 4.53760, -42.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, -1.00980)
+
+[node name="Rim24" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(77.24257, 6.75743, -42.00000)
+mesh = SubResource("R20")
+rotation = Vector3(0.00000, 0.00000, -0.78540)
+
+[node name="Spoke24" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(70.98792, 11.74535, -42.00000)
+mesh = SubResource("R2")
+rotation = Vector3(0.00000, 0.00000, -2.46839)
+
+[node name="Car24" type="MeshInstance3D" parent="."]
+position = Vector3(75.97584, 4.79070, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb24" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(75.97584, 5.49070, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim25" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(79.46240, 9.54101, -42.00000)
+mesh = SubResource("R21")
+rotation = Vector3(0.00000, 0.00000, -0.56100)
+
+[node name="Rim26" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(81.00717, 12.74876, -42.00000)
+mesh = SubResource("R22")
+rotation = Vector3(0.00000, 0.00000, -0.33660)
+
+[node name="Spoke26" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(73.20775, 14.52893, -42.00000)
+mesh = SubResource("R23")
+rotation = Vector3(0.00000, 0.00000, -2.01960)
+
+[node name="Car26" type="MeshInstance3D" parent="."]
+position = Vector3(80.41550, 10.35786, -42.00000)
+mesh = SubResource("R3")
+
+[node name="RimBulb26" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(80.41550, 11.05786, -42.00000)
+mesh = SubResource("R4")
+
+[node name="Rim27" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(81.79942, 16.21983, -42.00000)
+mesh = SubResource("R6")
+rotation = Vector3(0.00000, 0.00000, -0.11220)
+
+[node name="WheelFoot70" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(62.00000, 9.00000, -41.50000)
+mesh = SubResource("R24")
+rotation = Vector3(-0.05072, 0.00000, -0.41822)
+
+[node name="WheelFoot86" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(70.00000, 9.00000, -41.50000)
+mesh = SubResource("R24")
+rotation = Vector3(-0.05072, 0.00000, 0.41822)
+
+[node name="CarouselRoof" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(-75.00000, 6.00000, 16.00000)
+mesh = SubResource("R25")
+
+[node name="CarouselBase" type="MeshInstance3D" parent="."]
+position = Vector3(-75.00000, 0.30000, 16.00000)
+mesh = SubResource("R26")
+
+[node name="CarouselPole0" type="MeshInstance3D" parent="."]
+position = Vector3(-68.00000, 3.00000, 16.00000)
+mesh = SubResource("R27")
+
+[node name="CarouselPole1" type="MeshInstance3D" parent="."]
+position = Vector3(-69.33688, 3.00000, 20.11450)
+mesh = SubResource("R27")
+
+[node name="CarouselPole2" type="MeshInstance3D" parent="."]
+position = Vector3(-72.83688, 3.00000, 22.65740)
+mesh = SubResource("R27")
+
+[node name="CarouselPole3" type="MeshInstance3D" parent="."]
+position = Vector3(-77.16312, 3.00000, 22.65740)
+mesh = SubResource("R27")
+
+[node name="CarouselPole4" type="MeshInstance3D" parent="."]
+position = Vector3(-80.66312, 3.00000, 20.11450)
+mesh = SubResource("R27")
+
+[node name="CarouselPole5" type="MeshInstance3D" parent="."]
+position = Vector3(-82.00000, 3.00000, 16.00000)
+mesh = SubResource("R27")
+
+[node name="CarouselPole6" type="MeshInstance3D" parent="."]
+position = Vector3(-80.66312, 3.00000, 11.88550)
+mesh = SubResource("R27")
+
+[node name="CarouselPole7" type="MeshInstance3D" parent="."]
+position = Vector3(-77.16312, 3.00000, 9.34260)
+mesh = SubResource("R27")
+
+[node name="CarouselPole8" type="MeshInstance3D" parent="."]
+position = Vector3(-72.83688, 3.00000, 9.34260)
+mesh = SubResource("R27")
+
+[node name="CarouselPole9" type="MeshInstance3D" parent="."]
+position = Vector3(-69.33688, 3.00000, 11.88550)
+mesh = SubResource("R27")
+
+[node name="TentSkirt0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(-40.00000, 2.00000, 25.00000)
+mesh = SubResource("R28")
+
+[node name="TentPeak0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(-40.00000, 6.00000, 25.00000)
+mesh = SubResource("R29")
+
+[node name="TentSkirt1" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(59.00000, 2.00000, 23.00000)
+mesh = SubResource("R30")
+
+[node name="TentPeak1" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(59.00000, 6.00000, 23.00000)
+mesh = SubResource("R31")
+
+[node name="TentSkirt2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(-87.00000, 2.00000, -61.00000)
+mesh = SubResource("R32")
+
+[node name="TentPeak2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(-87.00000, 6.00000, -61.00000)
+mesh = SubResource("R33")
+
+[node name="TentSkirt3" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(35.00000, 2.00000, -99.00000)
+mesh = SubResource("R34")
+
+[node name="TentPeak3" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(35.00000, 6.00000, -99.00000)
+mesh = SubResource("R35")
+
+[node name="TentSkirt4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(9.00000, 2.00000, -91.00000)
+mesh = SubResource("R30")
+
+[node name="TentPeak4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(9.00000, 6.00000, -91.00000)
+mesh = SubResource("R31")
+
+[node name="CoasterSupport0" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(-1.00000, 4.00000, -98.00000)
+mesh = SubResource("R36")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterSupport1" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(2.60000, 4.71914, -98.70000)
+mesh = SubResource("R37")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack1" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(0.80000, 8.71914, -98.35000)
+mesh = SubResource("R38")
+rotation = Vector3(-0.17864, 0.00000, -1.19070)
+
+[node name="CoasterSupport2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(6.20000, 5.26221, -99.40000)
+mesh = SubResource("R39")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack2" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(4.40000, 9.98134, -99.05000)
+mesh = SubResource("R40")
+rotation = Vector3(-0.18405, 0.00000, -1.27778)
+
+[node name="CoasterSupport3" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(9.80000, 5.49624, -100.10000)
+mesh = SubResource("R41")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack3" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(8.00000, 10.75845, -99.75000)
+mesh = SubResource("R42")
+rotation = Vector3(-0.19048, 0.00000, -1.44150)
+
+[node name="CoasterSupport4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(13.40000, 5.36395, -100.80000)
+mesh = SubResource("R43")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack4" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(11.60000, 10.86019, -100.45000)
+mesh = SubResource("R44")
+rotation = Vector3(-0.19154, 0.00000, -1.64416)
+
+[node name="CoasterSupport5" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(17.00000, 4.89771, -101.50000)
+mesh = SubResource("R45")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack5" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(15.20000, 10.26165, -101.15000)
+mesh = SubResource("R46")
+rotation = Vector3(-0.18606, 0.00000, -1.82425)
+
+[node name="CoasterSupport6" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(20.60000, 4.21168, -102.20000)
+mesh = SubResource("R47")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack6" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(18.80000, 9.10939, -101.85000)
+mesh = SubResource("R48")
+rotation = Vector3(-0.17973, 0.00000, -1.93493)
+
+[node name="CoasterSupport7" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(24.20000, 3.47383, -102.90000)
+mesh = SubResource("R49")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack7" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(22.40000, 7.68551, -102.55000)
+mesh = SubResource("R50")
+rotation = Vector3(-0.17801, 0.00000, -1.95982)
+
+[node name="CoasterSupport8" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(27.80000, 2.86480, -103.60000)
+mesh = SubResource("R51")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack8" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(26.00000, 6.33862, -103.25000)
+mesh = SubResource("R52")
+rotation = Vector3(-0.18215, 0.00000, -1.89705)
+
+[node name="CoasterSupport9" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(31.40000, 2.53370, -104.30000)
+mesh = SubResource("R53")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack9" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(29.60000, 5.39850, -103.95000)
+mesh = SubResource("R54")
+rotation = Vector3(-0.18895, 0.00000, -1.75270)
+
+[node name="CoasterSupport10" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(35.00000, 2.56161, -105.00000)
+mesh = SubResource("R55")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack10" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(33.20000, 5.09532, -104.65000)
+mesh = SubResource("R56")
+rotation = Vector3(-0.19203, 0.00000, -1.55529)
+
+[node name="CoasterSupport11" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(38.60000, 2.94169, -105.70000)
+mesh = SubResource("R57")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack11" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(36.80000, 5.50330, -105.35000)
+mesh = SubResource("R58")
+rotation = Vector3(-0.18800, 0.00000, -1.36270)
+
+[node name="CoasterSupport12" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(42.20000, 3.58088, -106.40000)
+mesh = SubResource("R59")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack12" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(40.40000, 6.52257, -106.05000)
+mesh = SubResource("R60")
+rotation = Vector3(-0.18122, 0.00000, -1.22958)
+
+[node name="CoasterSupport13" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(45.80000, 4.32268, -107.10000)
+mesh = SubResource("R61")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack13" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(44.00000, 7.90356, -106.75000)
+mesh = SubResource("R62")
+rotation = Vector3(-0.17788, 0.00000, -1.17989)
+
+[node name="CoasterSupport14" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(49.40000, 4.98548, -107.80000)
+mesh = SubResource("R63")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack14" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(47.60000, 9.30816, -107.45000)
+mesh = SubResource("R64")
+rotation = Vector3(-0.18048, 0.00000, -1.21798)
+
+[node name="CoasterSupport15" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(53.00000, 5.40700, -108.50000)
+mesh = SubResource("R65")
+rotation = Vector3(0.00000, 0.00000, -0.00000)
+
+[node name="CoasterTrack15" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_rusty_metal_04")
+position = Vector3(51.20000, 10.39248, -108.15000)
+mesh = SubResource("R66")
+rotation = Vector3(-0.18711, 0.00000, -1.34076)

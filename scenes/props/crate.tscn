@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/ochre.tres" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/detail/crate_detail.tscn" id="Phase3Detail"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(0.90000, 0.90000, 0.90000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(0.90000, 0.90000, 0.90000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(0.08000, 0.90000, 0.05500)
+material = ExtResource("2")
+
+[node name="Crate" type="Node3D"]
+
+[node name="Body" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.45000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Body"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Body"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Brace-0.4" type="MeshInstance3D" parent="."]
+position = Vector3(-0.40000, 0.45000, 0.47000)
+mesh = SubResource("R3")
+
+[node name="Brace0.4" type="MeshInstance3D" parent="."]
+position = Vector3(0.40000, 0.45000, 0.47000)
+mesh = SubResource("R3")
+
+[node name="EnvironmentalDetail" parent="." instance=ExtResource("Phase3Detail")]

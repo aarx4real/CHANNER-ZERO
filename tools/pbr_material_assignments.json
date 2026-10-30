@@ -1,0 +1,1525 @@
+{
+  "changed_scenes": [
+    "scenes/detail/crate_detail.tscn",
+    "scenes/detail/entrance_detail.tscn",
+    "scenes/detail/lamp_detail.tscn",
+    "scenes/detail/office_detail.tscn",
+    "scenes/detail/shed_detail.tscn",
+    "scenes/detail/theatre_detail.tscn",
+    "scenes/maps/backstage_elbow.tscn",
+    "scenes/maps/broadcast_control_blockout.tscn",
+    "scenes/maps/carnival_entrance.tscn",
+    "scenes/maps/carnival_hub_layout.tscn",
+    "scenes/maps/carnival_story_quarter.tscn",
+    "scenes/maps/ending_broadcast_room.tscn",
+    "scenes/maps/final_theatre_foundation.tscn",
+    "scenes/maps/funhouse_grounds.tscn",
+    "scenes/maps/hub_distant_scenery.tscn",
+    "scenes/maps/hub_ground.tscn",
+    "scenes/maps/main_carnival_stage.tscn",
+    "scenes/maps/owners_office_blockout.tscn",
+    "scenes/maps/power_fuse_foundation.tscn",
+    "scenes/maps/power_shed.tscn",
+    "scenes/maps/prize_courtyard.tscn",
+    "scenes/maps/puppet_theatre.tscn",
+    "scenes/maps/theatre_office_doorway.tscn",
+    "scenes/maps/ticket_booth.tscn",
+    "scenes/props/crate.tscn",
+    "scenes/props/lamp.tscn",
+    "scenes/props/open_stall_blockout.tscn",
+    "scenes/props/television_placeholder.tscn"
+  ],
+  "assignments": [
+    {
+      "scene": "scenes/detail/crate_detail.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/detail/entrance_detail.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/detail/entrance_detail.tscn",
+      "target": "shared steel",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/detail/entrance_detail.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/detail/entrance_detail.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/detail/entrance_detail.tscn",
+      "target": "shared rope",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/detail/lamp_detail.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/detail/office_detail.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/detail/office_detail.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/detail/shed_detail.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/detail/shed_detail.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/detail/shed_detail.tscn",
+      "target": "shared steel",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/detail/theatre_detail.tscn",
+      "target": "shared curtain",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/detail/theatre_detail.tscn",
+      "target": "shared seat",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/detail/theatre_detail.tscn",
+      "target": "shared rope",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/detail/theatre_detail.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/detail/theatre_detail.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/detail/theatre_detail.tscn",
+      "target": "./CurtainBatch",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/detail/theatre_detail.tscn",
+      "target": "./SeatBatch",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/backstage_elbow.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/backstage_elbow.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/backstage_elbow.tscn",
+      "target": "EastWingFloor/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/backstage_elbow.tscn",
+      "target": "EastWingRoof/Mesh",
+      "material": "roof_07"
+    },
+    {
+      "scene": "scenes/maps/backstage_elbow.tscn",
+      "target": "NorthWingFloor/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/backstage_elbow.tscn",
+      "target": "NorthWingRoof/Mesh",
+      "material": "roof_07"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "shared steel",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "Floor/Mesh",
+      "material": "dirty_tiles"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "Roof/Mesh",
+      "material": "dirty_concrete"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "NorthWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "SouthWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "SouthWall1/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "EastWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "WestWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/broadcast_control_blockout.tscn",
+      "target": "WestWall1/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "Arch/Mesh",
+      "material": "painted_wood_red"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "TicketCounter-8/Mesh",
+      "material": "painted_wood_red"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "CounterRoof-8/Mesh",
+      "material": "roof_07"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "TicketMachine-8/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "TicketCounter8/Mesh",
+      "material": "painted_wood_red"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "CounterRoof8/Mesh",
+      "material": "roof_07"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "TicketMachine8/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_entrance.tscn",
+      "target": "TVPlinth/Mesh",
+      "material": "dirty_concrete"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "shared blockout_soil",
+      "material": "dirt"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "shared blockout_path",
+      "material": "asphalt_02"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "shared blockout_bank",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./StageTentCanopy",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "ServiceYard/Mesh",
+      "material": "dirty_concrete"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "ServiceSouthRamp/Mesh",
+      "material": "concrete_floor_damaged_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "ServiceWestRamp/Mesh",
+      "material": "concrete_floor_damaged_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./ServiceBank0",
+      "material": "dirt"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./ServiceBank1",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./ServiceBank2",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./HubSoilIsland",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter0/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank0",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter1/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter2/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank2",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter3/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter4/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank4",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter5/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter6/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank6",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter7/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter8/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank8",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter9/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter10/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank10",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter11/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter12/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank12",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter13/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter14/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank14",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter15/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter16/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank16",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter17/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter18/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank18",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter19/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter20/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank20",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter21/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter22/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank22",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter23/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter24/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "./BoundaryBank24",
+      "material": "rocks_ground_03"
+    },
+    {
+      "scene": "scenes/maps/carnival_hub_layout.tscn",
+      "target": "Perimeter25/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/carnival_story_quarter.tscn",
+      "target": "shared curtain",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/carnival_story_quarter.tscn",
+      "target": "./TheatreTentCap",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "Floor/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "Roof/Mesh",
+      "material": "dirty_concrete"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "NorthWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "SouthWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "SouthWall1/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "EastWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "WestWall0/Mesh",
+      "material": "damaged_plaster"
+    },
+    {
+      "scene": "scenes/maps/ending_broadcast_room.tscn",
+      "target": "TVPlinth/Mesh",
+      "material": "dirty_concrete"
+    },
+    {
+      "scene": "scenes/maps/final_theatre_foundation.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/final_theatre_foundation.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/final_theatre_foundation.tscn",
+      "target": "EndingTVPlinth/Mesh",
+      "material": "dirty_concrete"
+    },
+    {
+      "scene": "scenes/maps/funhouse_grounds.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/funhouse_grounds.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim0",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke0",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb0",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim1",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim2",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke2",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb2",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim3",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim4",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke4",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb4",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim5",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim6",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke6",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb6",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim7",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim8",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke8",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb8",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim9",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim10",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke10",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb10",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim11",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim12",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke12",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb12",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim13",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim14",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke14",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb14",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim15",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim16",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke16",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb16",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim17",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim18",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke18",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb18",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim19",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim20",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke20",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb20",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim21",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim22",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke22",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb22",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim23",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim24",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke24",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb24",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim25",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim26",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Spoke26",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./RimBulb26",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./Rim27",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./WheelFoot70",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./WheelFoot86",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CarouselRoof",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentSkirt0",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentPeak0",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentSkirt1",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentPeak1",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentSkirt2",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentPeak2",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentSkirt3",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentPeak3",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentSkirt4",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./TentPeak4",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport0",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport1",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack1",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport2",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack2",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport3",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack3",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport4",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack4",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport5",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack5",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport6",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack6",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport7",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack7",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport8",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack8",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport9",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack9",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport10",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack10",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport11",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack11",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport12",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack12",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport13",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack13",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport14",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack14",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterSupport15",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_distant_scenery.tscn",
+      "target": "./CoasterTrack15",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/hub_ground.tscn",
+      "target": "shared blockout_soil",
+      "material": "dirt"
+    },
+    {
+      "scene": "scenes/maps/hub_ground.tscn",
+      "target": "shared blockout_path",
+      "material": "asphalt_02"
+    },
+    {
+      "scene": "scenes/maps/hub_ground.tscn",
+      "target": "shared blockout_bank",
+      "material": "forrest_ground_01"
+    },
+    {
+      "scene": "scenes/maps/hub_ground.tscn",
+      "target": "IrregularFairgroundFloor/Soil",
+      "material": "brown_mud_03"
+    },
+    {
+      "scene": "scenes/maps/hub_ground.tscn",
+      "target": "./EntranceWalk",
+      "material": "cracked_concrete"
+    },
+    {
+      "scene": "scenes/maps/hub_ground.tscn",
+      "target": "./TicketWalk",
+      "material": "cracked_concrete"
+    },
+    {
+      "scene": "scenes/maps/hub_ground.tscn",
+      "target": "LowLandscapeBanks/RoundedBanks",
+      "material": "forest_leaves_02"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "shared curtain",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "shared seat",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "Stage/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "StageRamp/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/main_carnival_stage.tscn",
+      "target": "Backdrop/Mesh",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "Floor/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "Roof/Mesh",
+      "material": "dirty_concrete"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "NorthWall0/Mesh",
+      "material": "decrepit_wallpaper"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "SouthWall0/Mesh",
+      "material": "decrepit_wallpaper"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "SouthWall1/Mesh",
+      "material": "decrepit_wallpaper"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "EastWall0/Mesh",
+      "material": "decrepit_wallpaper"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "EastWall1/Mesh",
+      "material": "decrepit_wallpaper"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "WestWall0/Mesh",
+      "material": "decrepit_wallpaper"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "Desk/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "Desktop/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "Shelf1/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "Shelf1.8/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/maps/owners_office_blockout.tscn",
+      "target": "Shelf2.6/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/maps/power_fuse_foundation.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "shared steel",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "Roof/Mesh",
+      "material": "worn_corrugated_iron"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "Floor/Mesh",
+      "material": "concrete_floor_damaged_01"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "Generator-2/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "Generator2/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/power_shed.tscn",
+      "target": "Panel/Mesh",
+      "material": "rusty_metal_04"
+    },
+    {
+      "scene": "scenes/maps/prize_courtyard.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/maps/prize_courtyard.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/prize_courtyard.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "shared curtain",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "shared seat",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "Roof/Mesh",
+      "material": "roof_07"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "Floor/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "Stage/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "StageRamp/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./Curtain-8.8",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./Curtain8.8",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./Valance",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold0",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold1",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold2",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold3",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold4",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold5",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold6",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold7",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/puppet_theatre.tscn",
+      "target": "./CurtainFold8",
+      "material": "velour_velvet"
+    },
+    {
+      "scene": "scenes/maps/theatre_office_doorway.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/ticket_booth.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/maps/ticket_booth.tscn",
+      "target": "BackWall/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/maps/ticket_booth.tscn",
+      "target": "Roof/Mesh",
+      "material": "roof_07"
+    },
+    {
+      "scene": "scenes/maps/ticket_booth.tscn",
+      "target": "Floor/Mesh",
+      "material": "old_wood_floor"
+    },
+    {
+      "scene": "scenes/maps/ticket_booth.tscn",
+      "target": "Counter/Mesh",
+      "material": "painted_wood_red"
+    },
+    {
+      "scene": "scenes/maps/ticket_booth.tscn",
+      "target": "Shelf1.5/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/maps/ticket_booth.tscn",
+      "target": "Shelf2.2/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/props/crate.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/props/lamp.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/props/open_stall_blockout.tscn",
+      "target": "shared wood",
+      "material": "rough_wood"
+    },
+    {
+      "scene": "scenes/props/open_stall_blockout.tscn",
+      "target": "shared canvas",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/props/open_stall_blockout.tscn",
+      "target": "Counter/Mesh",
+      "material": "painted_wood_red"
+    },
+    {
+      "scene": "scenes/props/open_stall_blockout.tscn",
+      "target": "Back/Mesh",
+      "material": "weathered_planks"
+    },
+    {
+      "scene": "scenes/props/open_stall_blockout.tscn",
+      "target": "./CanvasCanopy",
+      "material": "hessian_380"
+    },
+    {
+      "scene": "scenes/props/television_placeholder.tscn",
+      "target": "shared rust",
+      "material": "rusty_metal_02"
+    },
+    {
+      "scene": "scenes/props/television_placeholder.tscn",
+      "target": "shared steel",
+      "material": "rusty_metal_04"
+    }
+  ],
+  "material_sets": 23,
+  "material_resources": 25,
+  "reserved_unassigned": [
+    "aerial_beach_02",
+    "leather_red_02"
+  ]
+}

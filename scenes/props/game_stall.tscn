@@ -1,0 +1,171 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Material" path="res://materials/red.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/wood.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/canvas.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/ochre.tres" id="4"]
+
+[ext_resource type="Material" path="res://materials/bulb.tres" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/detail/stall_detail.tscn" id="Phase3Detail"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(4.80000, 3.00000, 0.18000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(4.80000, 3.00000, 0.18000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(4.80000, 1.80000, 0.80000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(4.80000, 1.80000, 0.80000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(0.14000, 3.40000, 0.14000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(0.14000, 3.40000, 0.14000)
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(5.10000, 0.16000, 3.00000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(5.10000, 0.16000, 3.00000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(4.60000, 0.65000, 0.15000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(4.60000, 0.65000, 0.15000)
+
+[sub_resource type="CylinderMesh" id="R11"]
+top_radius = 0.32
+bottom_radius = 0.32
+height = 0.08
+radial_segments = 12
+material = ExtResource("4")
+
+[sub_resource type="BoxMesh" id="R12"]
+size = Vector3(0.09000, 0.09000, 0.09000)
+material = ExtResource("5")
+
+[node name="GameStall" type="Node3D"]
+
+[node name="Back" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 1.50000, -1.30000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Back"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Back"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Counter" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.90000, 0.65000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Counter"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Counter"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Pillar-2.3" type="StaticBody3D" parent="."]
+position = Vector3(-2.30000, 1.70000, 0.80000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Pillar-2.3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Pillar-2.3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="Pillar2.3" type="StaticBody3D" parent="."]
+position = Vector3(2.30000, 1.70000, 0.80000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Pillar2.3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="Pillar2.3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="Canopy" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.30000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Canopy"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="Canopy"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="SignBoard" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 2.70000, 0.85000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SignBoard"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="SignBoard"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R10")
+
+[node name="Sign" type="Label3D" parent="."]
+position = Vector3(0.00000, 2.70000, 0.95000)
+text = "TRY YOUR LUCK"
+font_size = 32
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="Target-1.2" type="MeshInstance3D" parent="."]
+position = Vector3(-1.20000, 1.80000, -1.12000)
+mesh = SubResource("R11")
+rotation = Vector3(1.57080, 0.00000, 0.00000)
+
+[node name="Bulb-1.2" type="MeshInstance3D" parent="."]
+position = Vector3(-1.20000, 3.12000, 1.53000)
+mesh = SubResource("R12")
+
+[node name="Target0" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 1.80000, -1.12000)
+mesh = SubResource("R11")
+rotation = Vector3(1.57080, 0.00000, 0.00000)
+
+[node name="Bulb0" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 3.12000, 1.53000)
+mesh = SubResource("R12")
+
+[node name="Target1.2" type="MeshInstance3D" parent="."]
+position = Vector3(1.20000, 1.80000, -1.12000)
+mesh = SubResource("R11")
+rotation = Vector3(1.57080, 0.00000, 0.00000)
+
+[node name="Bulb1.2" type="MeshInstance3D" parent="."]
+position = Vector3(1.20000, 3.12000, 1.53000)
+mesh = SubResource("R12")
+
+[node name="EnvironmentalDetail" parent="." instance=ExtResource("Phase3Detail")]

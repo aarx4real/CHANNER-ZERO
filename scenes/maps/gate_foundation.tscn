@@ -1,0 +1,11 @@
+[gd_scene load_steps=1 format=3]
+
+[node name="GateFoundation" type="Node3D"]
+
+[node name="GateMechanismMarker" type="Marker3D" parent="."]
+position = Vector3(3.00000, 1.00000, -0.40000)
+
+
+[node name="FinalGateDoorMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 1.00000)
+

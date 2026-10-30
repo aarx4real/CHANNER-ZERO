@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/broadcast_control_blockout.tscn" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/backstage_elbow.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/owners_office_blockout.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/puppet_theatre.tscn" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/ending_broadcast_room.tscn" id="5"]
+
+[ext_resource type="Material" path="res://materials/pbr/velour_velvet.tres" id="6"]
+
+[ext_resource type="Material" path="res://materials/pbr/hessian_380.tres" id="PBR_hessian_380"]
+
+[sub_resource type="CylinderMesh" id="R1"]
+top_radius = 0.1
+bottom_radius = 20
+height = 5
+radial_segments = 12
+material = ExtResource("6")
+
+[node name="CarnivalStoryQuarter" type="Node3D"]
+
+[node name="ControlRoom" parent="." instance=ExtResource("1")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Backstage" parent="." instance=ExtResource("2")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="OwnersOffice" parent="." instance=ExtResource("3")]
+position = Vector3(-16.00000, 0.00000, -15.00000)
+
+[node name="FinalTheatre" parent="." instance=ExtResource("4")]
+position = Vector3(4.00000, 0.00000, -27.50000)
+
+[node name="EndingRoom" parent="." instance=ExtResource("5")]
+position = Vector3(14.00000, 0.00000, -48.50000)
+
+[node name="TheatreTentCap" type="MeshInstance3D" parent="."]
+material_override = ExtResource("PBR_hessian_380")
+position = Vector3(4.00000, 10.00000, -27.50000)
+mesh = SubResource("R1")
+
+[node name="TheatreLandmark" type="Label3D" parent="."]
+position = Vector3(4.00000, 9.00000, -12.00000)
+text = "MIDNIGHT THEATRE"
+font_size = 52
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false

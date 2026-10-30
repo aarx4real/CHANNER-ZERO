@@ -1,0 +1,307 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="Material" path="res://materials/wood.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/rust.tres" id="3"]
+
+[ext_resource type="Material" path="res://materials/steel.tres" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/television_placeholder.tscn" id="5"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(8.00000, 0.16000, 10.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(8.00000, 0.16000, 10.00000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(8.20000, 0.20000, 10.20000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(8.20000, 0.20000, 10.20000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(2.60000, 3.40000, 0.20000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(2.60000, 3.40000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(2.80000, 0.80000, 0.20000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(2.80000, 0.80000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(0.20000, 3.40000, 10.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(0.20000, 3.40000, 10.00000)
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(8.00000, 0.14000, 0.18000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(8.00000, 0.14000, 0.18000)
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(1.30000, 1.20000, 0.80000)
+material = ExtResource("4")
+
+[sub_resource type="BoxShape3D" id="R14"]
+size = Vector3(1.30000, 1.20000, 0.80000)
+
+[node name="TelevisionControlRoom" type="Node3D"]
+
+[node name="Floor" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, -0.08000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Floor"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Floor"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Roof" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.50000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Roof"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Roof"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="NorthWall0" type="StaticBody3D" parent="."]
+position = Vector3(-2.70000, 1.70000, -5.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="NorthWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="NorthWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="NorthWall1" type="StaticBody3D" parent="."]
+position = Vector3(2.70000, 1.70000, -5.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="NorthWall1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="NorthWall1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="NorthLintel" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.00000, -5.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="NorthLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="NorthLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="NorthDoorMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, -5.00000)
+
+
+[node name="SouthWall0" type="StaticBody3D" parent="."]
+position = Vector3(-2.70000, 1.70000, 5.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SouthWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="SouthWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="SouthWall1" type="StaticBody3D" parent="."]
+position = Vector3(2.70000, 1.70000, 5.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SouthWall1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="SouthWall1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="SouthLintel" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.00000, 5.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SouthLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="SouthLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="SouthDoorMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 5.00000)
+
+
+[node name="EastWall0" type="StaticBody3D" parent="."]
+position = Vector3(4.00000, 1.70000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="EastWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="EastWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R10")
+
+[node name="WestWall0" type="StaticBody3D" parent="."]
+position = Vector3(-4.00000, 1.70000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="WestWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="WestWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R10")
+
+[node name="Rafter-3.0" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.22000, -3.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Rafter-3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R11")
+
+[node name="Collision" type="CollisionShape3D" parent="Rafter-3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R12")
+
+[node name="Rafter3.0" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.22000, 3.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Rafter3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R11")
+
+[node name="Collision" type="CollisionShape3D" parent="Rafter3.0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R12")
+
+[node name="RoomLight" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 2.80000, 0.00000)
+light_color = Color(1, 0.53, 0.23, 1)
+light_energy = 1.1
+omni_range = 10
+shadow_enabled = false
+
+[node name="Console1" type="StaticBody3D" parent="."]
+position = Vector3(-2.80000, 0.60000, 1.60000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Console1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Console1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R14")
+
+[node name="Channel1Television" parent="." instance=ExtResource("5")]
+position = Vector3(-2.80000, 1.20000, 1.60000)
+
+[node name="Channel1TelevisionMarker" type="Marker3D" parent="."]
+position = Vector3(-2.80000, 1.60000, 1.95000)
+
+
+[node name="Channel1ControlMarker" type="Marker3D" parent="."]
+position = Vector3(-2.80000, 1.00000, 2.20000)
+
+
+[node name="Console2" type="StaticBody3D" parent="."]
+position = Vector3(-2.80000, 0.60000, -1.60000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Console2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Console2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R14")
+
+[node name="Channel2Television" parent="." instance=ExtResource("5")]
+position = Vector3(-2.80000, 1.20000, -1.60000)
+
+[node name="Channel2TelevisionMarker" type="Marker3D" parent="."]
+position = Vector3(-2.80000, 1.60000, -1.25000)
+
+
+[node name="Channel2ControlMarker" type="Marker3D" parent="."]
+position = Vector3(-2.80000, 1.00000, -1.00000)
+
+
+[node name="Console3" type="StaticBody3D" parent="."]
+position = Vector3(2.80000, 0.60000, -1.60000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Console3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Console3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R14")
+
+[node name="Channel3Television" parent="." instance=ExtResource("5")]
+position = Vector3(2.80000, 1.20000, -1.60000)
+
+[node name="Channel3TelevisionMarker" type="Marker3D" parent="."]
+position = Vector3(2.80000, 1.60000, -1.25000)
+
+
+[node name="Channel3ControlMarker" type="Marker3D" parent="."]
+position = Vector3(2.80000, 1.00000, -1.00000)
+
+
+[node name="Title" type="Label3D" parent="."]
+position = Vector3(0.00000, 2.95000, 5.14000)
+text = "TELEVISION CONTROL"
+font_size = 24
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="ThreeChannelPuzzleMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 1.00000, -2.00000)
+
+
+[node name="ControlRoomStoryEventMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 0.00000)
+

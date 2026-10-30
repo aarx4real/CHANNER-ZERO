@@ -1,0 +1,320 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/props/game_stall.tscn" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/crate.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/barrel.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/lamp.tscn" id="4"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/pennant.tscn" id="6"]
+
+[ext_resource type="Material" path="res://materials/bulb.tres" id="7"]
+
+[ext_resource type="PackedScene" path="res://scenes/detail/midway_detail.tscn" id="Phase3Detail"]
+
+[sub_resource type="CylinderMesh" id="R1"]
+top_radius = 0.018
+bottom_radius = 0.018
+height = 14.0
+radial_segments = 12
+material = ExtResource("5")
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(0.08500, 0.12000, 0.08500)
+material = ExtResource("5")
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(0.08500, 0.12000, 0.08500)
+material = ExtResource("7")
+
+[node name="CarnivalMidway" type="Node3D"]
+
+[node name="Stall0" parent="." instance=ExtResource("1")]
+position = Vector3(-9.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, -0.22000, 0.00000)
+
+[node name="Crate0" parent="." instance=ExtResource("2")]
+position = Vector3(-6.20000, 0.00000, 1.10000)
+
+[node name="Barrel0" parent="." instance=ExtResource("3")]
+position = Vector3(-11.90000, 0.00000, 0.00000)
+
+[node name="Stall1" parent="." instance=ExtResource("1")]
+position = Vector3(9.00000, 0.00000, -4.00000)
+rotation = Vector3(0.00000, 0.22000, 0.00000)
+
+[node name="Crate1" parent="." instance=ExtResource("2")]
+position = Vector3(11.80000, 0.00000, -2.90000)
+
+[node name="Barrel1" parent="." instance=ExtResource("3")]
+position = Vector3(6.10000, 0.00000, -4.00000)
+
+[node name="Stall2" parent="." instance=ExtResource("1")]
+position = Vector3(-9.00000, 0.00000, -13.00000)
+rotation = Vector3(0.00000, -0.22000, 0.00000)
+
+[node name="Crate2" parent="." instance=ExtResource("2")]
+position = Vector3(-6.20000, 0.00000, -11.90000)
+
+[node name="Barrel2" parent="." instance=ExtResource("3")]
+position = Vector3(-11.90000, 0.00000, -13.00000)
+
+[node name="Stall3" parent="." instance=ExtResource("1")]
+position = Vector3(9.00000, 0.00000, -19.00000)
+rotation = Vector3(0.00000, 0.22000, 0.00000)
+
+[node name="Crate3" parent="." instance=ExtResource("2")]
+position = Vector3(11.80000, 0.00000, -17.90000)
+
+[node name="Barrel3" parent="." instance=ExtResource("3")]
+position = Vector3(6.10000, 0.00000, -19.00000)
+
+[node name="Lamp0" parent="." instance=ExtResource("4")]
+position = Vector3(5.70000, 0.00000, 2.00000)
+
+[node name="String0" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 4.60000, 2.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, -1.57080)
+
+[node name="Pennant0_0" parent="." instance=ExtResource("6")]
+position = Vector3(-5.80000, 4.10000, 2.03000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Pennant0_1" parent="." instance=ExtResource("6")]
+position = Vector3(-3.90000, 4.10000, 2.03000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Pennant0_2" parent="." instance=ExtResource("6")]
+position = Vector3(-2.00000, 4.10000, 2.03000)
+rotation = Vector3(0.00000, 0.00000, 0.12000)
+
+[node name="Pennant0_3" parent="." instance=ExtResource("6")]
+position = Vector3(-0.10000, 4.10000, 2.03000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Pennant0_4" parent="." instance=ExtResource("6")]
+position = Vector3(1.80000, 4.10000, 2.03000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Pennant0_5" parent="." instance=ExtResource("6")]
+position = Vector3(3.70000, 4.10000, 2.03000)
+rotation = Vector3(0.00000, 0.00000, 0.12000)
+
+[node name="Pennant0_6" parent="." instance=ExtResource("6")]
+position = Vector3(5.60000, 4.10000, 2.03000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Bulb0_0" type="MeshInstance3D" parent="."]
+position = Vector3(-6.00000, 4.40000, 2.00000)
+mesh = SubResource("R2")
+
+[node name="Bulb0_1" type="MeshInstance3D" parent="."]
+position = Vector3(-4.50000, 4.42500, 2.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb0_2" type="MeshInstance3D" parent="."]
+position = Vector3(-3.00000, 4.45000, 2.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb0_3" type="MeshInstance3D" parent="."]
+position = Vector3(-1.50000, 4.47500, 2.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb0_4" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 4.50000, 2.00000)
+mesh = SubResource("R2")
+
+[node name="Bulb0_5" type="MeshInstance3D" parent="."]
+position = Vector3(1.50000, 4.47500, 2.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb0_6" type="MeshInstance3D" parent="."]
+position = Vector3(3.00000, 4.45000, 2.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb0_7" type="MeshInstance3D" parent="."]
+position = Vector3(4.50000, 4.42500, 2.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb0_8" type="MeshInstance3D" parent="."]
+position = Vector3(6.00000, 4.40000, 2.00000)
+mesh = SubResource("R2")
+
+[node name="Lamp1" parent="." instance=ExtResource("4")]
+position = Vector3(-5.70000, 0.00000, -11.00000)
+
+[node name="String1" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 4.60000, -11.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, -1.57080)
+
+[node name="Pennant1_0" parent="." instance=ExtResource("6")]
+position = Vector3(-5.80000, 4.10000, -10.97000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Pennant1_1" parent="." instance=ExtResource("6")]
+position = Vector3(-3.90000, 4.10000, -10.97000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Pennant1_2" parent="." instance=ExtResource("6")]
+position = Vector3(-2.00000, 4.10000, -10.97000)
+rotation = Vector3(0.00000, 0.00000, 0.12000)
+
+[node name="Pennant1_3" parent="." instance=ExtResource("6")]
+position = Vector3(-0.10000, 4.10000, -10.97000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Pennant1_4" parent="." instance=ExtResource("6")]
+position = Vector3(1.80000, 4.10000, -10.97000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Pennant1_5" parent="." instance=ExtResource("6")]
+position = Vector3(3.70000, 4.10000, -10.97000)
+rotation = Vector3(0.00000, 0.00000, 0.12000)
+
+[node name="Pennant1_6" parent="." instance=ExtResource("6")]
+position = Vector3(5.60000, 4.10000, -10.97000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Bulb1_0" type="MeshInstance3D" parent="."]
+position = Vector3(-6.00000, 4.40000, -11.00000)
+mesh = SubResource("R2")
+
+[node name="Bulb1_1" type="MeshInstance3D" parent="."]
+position = Vector3(-4.50000, 4.42500, -11.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb1_2" type="MeshInstance3D" parent="."]
+position = Vector3(-3.00000, 4.45000, -11.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb1_3" type="MeshInstance3D" parent="."]
+position = Vector3(-1.50000, 4.47500, -11.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb1_4" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 4.50000, -11.00000)
+mesh = SubResource("R2")
+
+[node name="Bulb1_5" type="MeshInstance3D" parent="."]
+position = Vector3(1.50000, 4.47500, -11.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb1_6" type="MeshInstance3D" parent="."]
+position = Vector3(3.00000, 4.45000, -11.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb1_7" type="MeshInstance3D" parent="."]
+position = Vector3(4.50000, 4.42500, -11.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb1_8" type="MeshInstance3D" parent="."]
+position = Vector3(6.00000, 4.40000, -11.00000)
+mesh = SubResource("R2")
+
+[node name="Lamp2" parent="." instance=ExtResource("4")]
+position = Vector3(5.70000, 0.00000, -25.00000)
+
+[node name="String2" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 4.60000, -25.00000)
+mesh = SubResource("R1")
+rotation = Vector3(0.00000, 0.00000, -1.57080)
+
+[node name="Pennant2_0" parent="." instance=ExtResource("6")]
+position = Vector3(-5.80000, 4.10000, -24.97000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Pennant2_1" parent="." instance=ExtResource("6")]
+position = Vector3(-3.90000, 4.10000, -24.97000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Pennant2_2" parent="." instance=ExtResource("6")]
+position = Vector3(-2.00000, 4.10000, -24.97000)
+rotation = Vector3(0.00000, 0.00000, 0.12000)
+
+[node name="Pennant2_3" parent="." instance=ExtResource("6")]
+position = Vector3(-0.10000, 4.10000, -24.97000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Pennant2_4" parent="." instance=ExtResource("6")]
+position = Vector3(1.80000, 4.10000, -24.97000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Pennant2_5" parent="." instance=ExtResource("6")]
+position = Vector3(3.70000, 4.10000, -24.97000)
+rotation = Vector3(0.00000, 0.00000, 0.12000)
+
+[node name="Pennant2_6" parent="." instance=ExtResource("6")]
+position = Vector3(5.60000, 4.10000, -24.97000)
+rotation = Vector3(0.00000, 0.00000, -0.12000)
+
+[node name="Bulb2_0" type="MeshInstance3D" parent="."]
+position = Vector3(-6.00000, 4.40000, -25.00000)
+mesh = SubResource("R2")
+
+[node name="Bulb2_1" type="MeshInstance3D" parent="."]
+position = Vector3(-4.50000, 4.42500, -25.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb2_2" type="MeshInstance3D" parent="."]
+position = Vector3(-3.00000, 4.45000, -25.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb2_3" type="MeshInstance3D" parent="."]
+position = Vector3(-1.50000, 4.47500, -25.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb2_4" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 4.50000, -25.00000)
+mesh = SubResource("R2")
+
+[node name="Bulb2_5" type="MeshInstance3D" parent="."]
+position = Vector3(1.50000, 4.47500, -25.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb2_6" type="MeshInstance3D" parent="."]
+position = Vector3(3.00000, 4.45000, -25.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb2_7" type="MeshInstance3D" parent="."]
+position = Vector3(4.50000, 4.42500, -25.00000)
+mesh = SubResource("R3")
+
+[node name="Bulb2_8" type="MeshInstance3D" parent="."]
+position = Vector3(6.00000, 4.40000, -25.00000)
+mesh = SubResource("R2")
+
+[node name="BoothWay" type="Label3D" parent="."]
+position = Vector3(-4.00000, 2.10000, -4.00000)
+text = "TICKETS  <"
+font_size = 28
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="ShedWay" type="Label3D" parent="."]
+position = Vector3(5.00000, 2.10000, -16.00000)
+text = "POWER  >"
+font_size = 28
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="TheatreWay" type="Label3D" parent="."]
+position = Vector3(0.00000, 3.00000, -27.00000)
+text = "MAIN STAGE
+KEEP TO THE LIT PATH"
+font_size = 30
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="EnvironmentalDetail" parent="." instance=ExtResource("Phase3Detail")]

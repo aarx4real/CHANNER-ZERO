@@ -1,0 +1,99 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/props/fence.tscn" id="1"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/steel.tres" id="3"]
+
+[ext_resource type="Script" path="res://scripts/environment/carnival_light.gd" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/detail/passage_detail.tscn" id="Phase3Detail"]
+
+[sub_resource type="CylinderMesh" id="R1"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 6.487102588983776
+radial_segments = 12
+material = ExtResource("2")
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(1.00000, 1.20000, 1.50000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(1.00000, 1.20000, 1.50000)
+
+[node name="DarkPassage" type="Node3D"]
+
+[node name="Fence0_-1" parent="." instance=ExtResource("1")]
+position = Vector3(-3.20000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Fence0_1" parent="." instance=ExtResource("1")]
+position = Vector3(3.20000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Cable0" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 3.42500, -0.50000)
+mesh = SubResource("R1")
+rotation = Vector3(-0.15477, 0.00000, -1.62543)
+
+[node name="Fence1_-1" parent="." instance=ExtResource("1")]
+position = Vector3(-3.20000, 0.00000, -4.00000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Fence1_1" parent="." instance=ExtResource("1")]
+position = Vector3(3.20000, 0.00000, -4.00000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Cable1" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 3.42500, -4.50000)
+mesh = SubResource("R1")
+rotation = Vector3(-0.15477, 0.00000, -1.62543)
+
+[node name="Fence2_-1" parent="." instance=ExtResource("1")]
+position = Vector3(-3.20000, 0.00000, -8.00000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Fence2_1" parent="." instance=ExtResource("1")]
+position = Vector3(3.20000, 0.00000, -8.00000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Cable2" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 3.42500, -8.50000)
+mesh = SubResource("R1")
+rotation = Vector3(-0.15477, 0.00000, -1.62543)
+
+[node name="BrokenEquipment" type="StaticBody3D" parent="."]
+position = Vector3(2.50000, 0.60000, -3.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="BrokenEquipment"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R2")
+
+[node name="Collision" type="CollisionShape3D" parent="BrokenEquipment"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R3")
+
+[node name="Direction" type="Label3D" parent="."]
+position = Vector3(0.00000, 2.60000, -9.00000)
+text = "MIDNIGHT THEATRE
+STRAIGHT AHEAD"
+font_size = 28
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false
+
+[node name="RedWarning" type="OmniLight3D" parent="."]
+position = Vector3(2.00000, 2.50000, -6.00000)
+light_color = Color(0.65, 0.08, 0.025, 1)
+light_energy = 1.5
+omni_range = 7
+shadow_enabled = false
+script = ExtResource("4")
+phase = 9.94
+
+[node name="EnvironmentalDetail" parent="." instance=ExtResource("Phase3Detail")]

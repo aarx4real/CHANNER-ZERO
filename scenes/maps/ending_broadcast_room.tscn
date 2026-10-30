@@ -1,0 +1,250 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rough_wood.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="2"]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_02.tres" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/television_placeholder.tscn" id="4"]
+
+[ext_resource type="Material" path="res://materials/pbr/old_wood_floor.tres" id="PBR_old_wood_floor"]
+
+[ext_resource type="Material" path="res://materials/pbr/roof_07.tres" id="PBR_roof_07"]
+
+[ext_resource type="Material" path="res://materials/pbr/damaged_plaster.tres" id="PBR_damaged_plaster"]
+
+[ext_resource type="Material" path="res://materials/pbr/dirty_concrete.tres" id="PBR_dirty_concrete"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(12.00000, 0.16000, 16.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(12.00000, 0.16000, 16.00000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(12.20000, 0.20000, 16.20000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(12.20000, 0.20000, 16.20000)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(12.00000, 4.60000, 0.20000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(12.00000, 4.60000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(4.00000, 4.60000, 0.20000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(4.00000, 4.60000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(4.00000, 2.00000, 0.20000)
+material = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(4.00000, 2.00000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(0.20000, 4.60000, 16.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(0.20000, 4.60000, 16.00000)
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(12.00000, 0.14000, 0.18000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R14"]
+size = Vector3(12.00000, 0.14000, 0.18000)
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(2.00000, 1.20000, 1.20000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(2.00000, 1.20000, 1.20000)
+
+[node name="EndingBroadcastRoom" type="Node3D"]
+
+[node name="Floor" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, -0.08000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Floor"]
+material_override = ExtResource("PBR_old_wood_floor")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Floor"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Roof" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 4.70000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Roof"]
+material_override = ExtResource("PBR_dirty_concrete")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Roof"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="NorthWall0" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 2.30000, -8.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="NorthWall0"]
+material_override = ExtResource("PBR_damaged_plaster")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R5")
+
+[node name="Collision" type="CollisionShape3D" parent="NorthWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R6")
+
+[node name="SouthWall0" type="StaticBody3D" parent="."]
+position = Vector3(-4.00000, 2.30000, 8.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SouthWall0"]
+material_override = ExtResource("PBR_damaged_plaster")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="SouthWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="SouthWall1" type="StaticBody3D" parent="."]
+position = Vector3(4.00000, 2.30000, 8.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SouthWall1"]
+material_override = ExtResource("PBR_damaged_plaster")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="SouthWall1"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R8")
+
+[node name="SouthLintel" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 3.60000, 8.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="SouthLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="SouthLintel"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R10")
+
+[node name="SouthDoorMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 8.00000)
+
+
+[node name="EastWall0" type="StaticBody3D" parent="."]
+position = Vector3(6.00000, 2.30000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="EastWall0"]
+material_override = ExtResource("PBR_damaged_plaster")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R11")
+
+[node name="Collision" type="CollisionShape3D" parent="EastWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R12")
+
+[node name="WestWall0" type="StaticBody3D" parent="."]
+position = Vector3(-6.00000, 2.30000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="WestWall0"]
+material_override = ExtResource("PBR_damaged_plaster")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R11")
+
+[node name="Collision" type="CollisionShape3D" parent="WestWall0"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R12")
+
+[node name="Rafter-4.8" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 4.42000, -4.80000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Rafter-4.8"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Rafter-4.8"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R14")
+
+[node name="Rafter4.8" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 4.42000, 4.80000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Rafter4.8"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Rafter4.8"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R14")
+
+[node name="RoomLight" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 4.00000, 0.00000)
+light_color = Color(1, 0.53, 0.23, 1)
+light_energy = 1.1
+omni_range = 16
+shadow_enabled = false
+
+[node name="TVPlinth" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.60000, -3.50000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="TVPlinth"]
+material_override = ExtResource("PBR_dirty_concrete")
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R15")
+
+[node name="Collision" type="CollisionShape3D" parent="TVPlinth"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R16")
+
+[node name="EndingTelevision" parent="." instance=ExtResource("4")]
+position = Vector3(0.00000, 1.20000, -3.50000)
+
+[node name="EndingTelevisionMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 1.60000, -3.15000)
+
+
+[node name="EndingChoiceMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, -1.00000)
+
+
+[node name="EndingStoryEventMarker" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+
+[node name="Title" type="Label3D" parent="."]
+position = Vector3(0.00000, 3.20000, 7.80000)
+text = "FINAL TRANSMISSION"
+font_size = 28
+pixel_size = 0.01
+modulate = Color(0.72, 0.57, 0.3, 1)
+outline_size = 3
+no_depth_test = false

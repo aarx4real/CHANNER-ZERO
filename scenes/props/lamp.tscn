@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Material" path="res://materials/pbr/rusty_metal_02.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/bulb.tres" id="2"]
+
+[ext_resource type="Script" path="res://scripts/environment/carnival_light.gd" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/detail/lamp_detail.tscn" id="Phase3Detail"]
+
+[sub_resource type="CylinderMesh" id="R1"]
+top_radius = 0.065
+bottom_radius = 0.065
+height = 4
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="CylinderMesh" id="R2"]
+top_radius = 0.08
+bottom_radius = 0.31
+height = 0.3
+radial_segments = 12
+material = ExtResource("1")
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(0.28000, 0.40000, 0.28000)
+material = ExtResource("2")
+
+[node name="Lamp" type="Node3D"]
+
+[node name="Post" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 2.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Cap" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 4.22000, 0.00000)
+mesh = SubResource("R2")
+
+[node name="Lantern" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 3.95000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Pool" type="OmniLight3D" parent="."]
+position = Vector3(0.00000, 3.70000, 0.00000)
+light_color = Color(1, 0.53, 0.23, 1)
+light_energy = 1.4
+omni_range = 8
+shadow_enabled = false
+script = ExtResource("3")
+phase = 2.84
+
+[node name="EnvironmentalDetail" parent="." instance=ExtResource("Phase3Detail")]

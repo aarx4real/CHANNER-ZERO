@@ -1,0 +1,374 @@
+[gd_scene load_steps=43 format=3]
+
+[ext_resource type="Material" path="res://materials/ground.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/path.tres" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/carnival_entrance.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/carnival_midway.tscn" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/ticket_booth.tscn" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/power_shed.tscn" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/dark_passage.tscn" id="7"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/puppet_theatre.tscn" id="8"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/final_gate.tscn" id="9"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/carnival_skyline.tscn" id="10"]
+
+[ext_resource type="Material" path="res://materials/wood.tres" id="11"]
+
+[ext_resource type="Material" path="res://materials/dark.tres" id="12"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/lamp.tscn" id="13"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/channel_zero_foundation.tscn" id="CZ_ChannelZeroFoundation"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(48.00000, 0.40000, 116.00000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(48.00000, 0.40000, 116.00000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(10.00000, 0.01200, 60.00000)
+material = ExtResource("2")
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(5.00000, 0.01400, 12.00000)
+material = ExtResource("2")
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(18.00000, 0.01200, 12.00000)
+material = ExtResource("2")
+
+[sub_resource type="BoxMesh" id="R6"]
+size = Vector3(0.25000, 2.40000, 116.00000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R7"]
+size = Vector3(0.25000, 2.40000, 116.00000)
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(48.00000, 2.40000, 0.25000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R9"]
+size = Vector3(48.00000, 2.40000, 0.25000)
+
+[sub_resource type="BoxMesh" id="R10"]
+size = Vector3(48.00000, 4.00000, 0.30000)
+material = ExtResource("12")
+
+[sub_resource type="BoxShape3D" id="R11"]
+size = Vector3(48.00000, 4.00000, 0.30000)
+
+[sub_resource type="BoxMesh" id="R12"]
+size = Vector3(18.50000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R13"]
+size = Vector3(18.50000, 2.50000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R14"]
+size = Vector3(20.80000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R15"]
+size = Vector3(20.80000, 2.50000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R16"]
+size = Vector3(22.00000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R17"]
+size = Vector3(22.00000, 2.50000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R18"]
+size = Vector3(32.00000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R19"]
+size = Vector3(32.00000, 2.50000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R20"]
+size = Vector3(12.00000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R21"]
+size = Vector3(12.00000, 2.50000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R22"]
+size = Vector3(20.30000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="R23"]
+size = Vector3(20.30000, 2.50000, 0.20000)
+
+[sub_resource type="BoxMesh" id="R24"]
+size = Vector3(14.00000, 0.01600, 3.00000)
+material = ExtResource("2")
+
+[sub_resource type="BoxMesh" id="CZFence37Mesh"]
+size = Vector3(11.80000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="CZFence37Shape"]
+size = Vector3(11.80000, 2.50000, 0.20000)
+
+[sub_resource type="BoxMesh" id="CZFence53Mesh"]
+size = Vector3(13.00000, 2.50000, 0.20000)
+material = ExtResource("11")
+
+[sub_resource type="BoxShape3D" id="CZFence53Shape"]
+size = Vector3(13.00000, 2.50000, 0.20000)
+
+[node name="HauntedCarnival" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, -0.20000, -39.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Ground"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Ground"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="MidwayPath" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 0.00600, -14.00000)
+mesh = SubResource("R3")
+
+[node name="PassagePath" type="MeshInstance3D" parent="."]
+position = Vector3(0.00000, 0.00700, -44.00000)
+mesh = SubResource("R4")
+
+[node name="ExitPath" type="MeshInstance3D" parent="."]
+position = Vector3(6.00000, 0.00600, -85.00000)
+mesh = SubResource("R5")
+
+[node name="Entrance" parent="." instance=ExtResource("3")]
+position = Vector3(0.00000, 0.00000, 6.00000)
+
+[node name="Midway" parent="." instance=ExtResource("4")]
+position = Vector3(0.00000, 0.00000, -4.00000)
+
+[node name="TicketBooth" parent="." instance=ExtResource("5")]
+position = Vector3(-14.00000, 0.00000, -15.00000)
+
+[node name="PowerShed" parent="." instance=ExtResource("6")]
+position = Vector3(14.00000, 0.00000, -27.00000)
+
+[node name="DarkPassage" parent="." instance=ExtResource("7")]
+position = Vector3(0.00000, 0.00000, -40.00000)
+
+[node name="PuppetTheatre" parent="." instance=ExtResource("8")]
+position = Vector3(0.00000, 0.00000, -66.00000)
+
+[node name="FinalGate" parent="." instance=ExtResource("9")]
+position = Vector3(0.00000, 0.00000, -92.00000)
+
+[node name="Skyline" parent="." instance=ExtResource("10")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Boundary-24" type="StaticBody3D" parent="."]
+position = Vector3(-24.00000, 1.20000, -39.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Boundary-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R6")
+
+[node name="Collision" type="CollisionShape3D" parent="Boundary-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R7")
+
+[node name="Boundary24" type="StaticBody3D" parent="."]
+position = Vector3(24.00000, 1.20000, -39.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Boundary24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R6")
+
+[node name="Collision" type="CollisionShape3D" parent="Boundary24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R7")
+
+[node name="EntranceBoundary" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 1.20000, 19.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="EntranceBoundary"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R8")
+
+[node name="Collision" type="CollisionShape3D" parent="EntranceBoundary"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R9")
+
+[node name="EndBoundary" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 2.00000, -97.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="EndBoundary"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R10")
+
+[node name="Collision" type="CollisionShape3D" parent="EndBoundary"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R11")
+
+[node name="CrossFence6_-24" type="StaticBody3D" parent="."]
+position = Vector3(-14.75000, 1.25000, 6.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence6_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R12")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence6_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R13")
+
+[node name="CrossFence6_5" type="StaticBody3D" parent="."]
+position = Vector3(14.75000, 1.25000, 6.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence6_5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R12")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence6_5"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R13")
+
+[node name="CrossFence-37_-24" type="StaticBody3D" parent="."]
+position = Vector3(-9.10000, 1.25000, -37.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-37_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("CZFence37Mesh")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-37_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("CZFence37Shape")
+
+[node name="CrossFence-37_3" type="StaticBody3D" parent="."]
+position = Vector3(13.60000, 1.25000, -37.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-37_3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R14")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-37_3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R15")
+
+[node name="CrossFence-53_-24" type="StaticBody3D" parent="."]
+position = Vector3(-8.50000, 1.25000, -53.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-53_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("CZFence53Mesh")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-53_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("CZFence53Shape")
+
+[node name="CrossFence-53_2" type="StaticBody3D" parent="."]
+position = Vector3(13.00000, 1.25000, -53.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-53_2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R16")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-53_2"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R17")
+
+[node name="CrossFence-79_-24" type="StaticBody3D" parent="."]
+position = Vector3(-8.00000, 1.25000, -79.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-79_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R18")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-79_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R19")
+
+[node name="CrossFence-79_12" type="StaticBody3D" parent="."]
+position = Vector3(18.00000, 1.25000, -79.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-79_12"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R20")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-79_12"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R21")
+
+[node name="CrossFence-92_-24" type="StaticBody3D" parent="."]
+position = Vector3(-13.85000, 1.25000, -92.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-92_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R22")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-92_-24"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R23")
+
+[node name="CrossFence-92_3" type="StaticBody3D" parent="."]
+position = Vector3(13.85000, 1.25000, -92.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="CrossFence-92_3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R22")
+
+[node name="Collision" type="CollisionShape3D" parent="CrossFence-92_3"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R23")
+
+[node name="OfficePath" type="MeshInstance3D" parent="."]
+position = Vector3(-10.00000, 0.00800, -10.00000)
+mesh = SubResource("R24")
+
+[node name="ShedPath" type="MeshInstance3D" parent="."]
+position = Vector3(10.00000, 0.00800, -21.00000)
+mesh = SubResource("R24")
+
+[node name="WayLamp0" parent="." instance=ExtResource("13")]
+position = Vector3(-5.00000, 0.00000, 11.00000)
+
+[node name="WayLamp1" parent="." instance=ExtResource("13")]
+position = Vector3(5.00000, 0.00000, -35.00000)
+
+[node name="WayLamp2" parent="." instance=ExtResource("13")]
+position = Vector3(10.00000, 0.00000, -83.00000)
+
+[node name="WayLamp3" parent="." instance=ExtResource("13")]
+position = Vector3(-5.00000, 0.00000, -88.00000)
+
+[node name="EntranceSpawn" type="Marker3D" parent="."]
+position = Vector3(0.00000, 0.12000, 17.00000)
+
+
+[node name="ChannelZeroFoundation" parent="." instance=ExtResource("CZ_ChannelZeroFoundation")]
+position = Vector3(0.00000, 0.00000, 0.00000)

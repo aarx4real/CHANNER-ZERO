@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Material" path="res://materials/wood.tres" id="1"]
+
+[ext_resource type="Material" path="res://materials/rust.tres" id="2"]
+
+[sub_resource type="BoxMesh" id="R1"]
+size = Vector3(4.00000, 1.70000, 0.16000)
+material = ExtResource("1")
+
+[sub_resource type="BoxShape3D" id="R2"]
+size = Vector3(4.00000, 1.70000, 0.16000)
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(0.16000, 2.10000, 0.22000)
+material = ExtResource("2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(0.16000, 2.10000, 0.22000)
+
+[node name="Fence" type="Node3D"]
+
+[node name="Barrier" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.85000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Barrier"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R1")
+
+[node name="Collision" type="CollisionShape3D" parent="Barrier"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R2")
+
+[node name="Post-1.9" type="StaticBody3D" parent="."]
+position = Vector3(-1.90000, 1.05000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Post-1.9"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Post-1.9"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
+
+[node name="Post1.9" type="StaticBody3D" parent="."]
+position = Vector3(1.90000, 1.05000, 0.00000)
+
+
+[node name="Mesh" type="MeshInstance3D" parent="Post1.9"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="Post1.9"]
+position = Vector3(0.00000, 0.00000, 0.00000)
+shape = SubResource("R4")
